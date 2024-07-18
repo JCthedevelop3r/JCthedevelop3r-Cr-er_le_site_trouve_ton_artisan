@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
-import { ListeartisansComponent } from './listeartisans/listeartisans.component';
 import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
@@ -18,7 +17,6 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     HeaderComponent,
     FooterComponent,
     ListeArtisansComponent,
-    ListeartisansComponent,
     FicheArtisanComponent,
     NotFoundPageComponent
   ],
