@@ -1,0 +1,41 @@
+header {
+    height: 72px;
+
+    .container-fluid {
+        flex-wrap: nowrap;
+
+        .logo-container {
+            width: 50%;
+    
+            .logo {
+                width: 163px;
+            }
+        }
+        
+        .right-icons {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+    
+            .magnifying-glass {
+                width: 32px;
+            }
+            
+            .navbar-toggler-container {
+                width: 51.97px;
+                height: 62.8px;
+            
+                .toggler-icon {
+                    display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  vertical-align: middle;
+                  background-image: url('../../../public/assets/images/bouton-menu-burger.png');
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 100%;
+                }
+            }
+        }
+    }
+}
