@@ -12,7 +12,7 @@
         </div>
         <div class="right-icons">
           <div class="magnifying-glass-container">
-            <button class="magnifying-glass-button">
+            <button (click)="searchToggler()" class="magnifying-glass-button">
               <img
                 src="assets/images/loupe-bleu.png"
                 alt="loupe bleu"
@@ -22,6 +22,7 @@
           </div>
           <div class="navbar-toggler-container">
             <button
+              (click)="navbarToggler()"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -30,8 +31,11 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="toggler-icon"></span>
-              <span class="action-text">Menu</span>
+              <div class="toggler-icon-container">
+                <span class="toggler-icon"></span>
+                <span class="action-text">Menu</span>
+              </div>
+              <span class="blue-cross-icon"></span>
             </button>
           </div>
         </div>
@@ -54,8 +58,8 @@
       </div>
     </div>
   </nav>
+  <app-search-input id="app-search-input" />
 </header>
-<app-search-input />
 
 <!--
   display: inline-block;
