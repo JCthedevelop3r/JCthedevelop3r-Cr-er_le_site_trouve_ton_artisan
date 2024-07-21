@@ -1,0 +1,47 @@
+@import '../../../sass-lib/lib.scss';
+
+.search-input-container {
+    //display: none;
+    height: 70px;
+    padding: 1rem 1.25rem 1rem;
+    box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
+
+    .form-magnifying-glass-container {
+        display: flex;
+        justify-content: center;
+
+        .form-container {
+            width: 85%;
+            height: 39px;
+
+            .search-input-form {
+                @extend .full-wh;
+
+                .search-input {
+                    @extend .full-wh;
+                    border-bottom: solid 1px $tta-light-blue;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    padding: .3rem 1rem;
+                }
+            }
+        }
+
+        .magnifying-glass-container {
+            width: 15%;
+
+            .magnifying-glass-border {
+                height: 100%;
+                border-right: solid 1px $tta-light-blue;
+                border-bottom: solid 1px $tta-light-blue;
+                padding: .3rem 0.8rem .6rem 1.4rem;
+            }
+
+            .magnifying-glass {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
