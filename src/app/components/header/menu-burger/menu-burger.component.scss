@@ -1,0 +1,21 @@
+@import '../../../sass-lib/lib.scss';
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+    width: 100vw;
+    height: 93vh;
+    padding: 1.5rem .75rem 0 1.5rem;
+}
+
+.batiment, .services, .fabrication, .alimentation {
+    height: 6.61vh;
+}
+
+a {
+    display: block;
+    width: 100%;
+    padding: 1.175rem 3.75rem 1.175rem 2.25rem;
+}

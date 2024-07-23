@@ -8,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   
   ngOnInit(): void {
-    // Permet d'initialiser les styles display lors du chargement du composant
+    // Permet d'initialiser les styles display lors du chargement des composants
     const navbarIcon = document.querySelector('.toggler-icon-container') as HTMLElement;
     const blueCross = document.querySelector('.blue-cross-icon') as HTMLElement;
 
-    if (navbarIcon) {
+    const searchInput = document.getElementById('app-search-input') as HTMLElement;
+
+    if(navbarIcon) {
       navbarIcon.style.display = "block";
     }
-    if (blueCross) {
+    if(blueCross) {
       blueCross.style.display = "none";
+    }
+
+    if(searchInput) {
+      searchInput.style.display = "none";
     }
   }
 

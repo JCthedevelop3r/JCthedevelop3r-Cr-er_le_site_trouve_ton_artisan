@@ -10,6 +10,7 @@ import { ListeArtisansComponent } from './components/liste-artisans/liste-artisa
 import { FicheArtisanComponent } from './components/fiche-artisan/fiche-artisan.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { SearchInputComponent } from './components/header/search-input/search-input.component';
+import { MenuBurgerComponent } from './components/header/menu-burger/menu-burger.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchInputComponent } from './components/header/search-input/search-in
     ListeArtisansComponent,
     FicheArtisanComponent,
     NotFoundPageComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    MenuBurgerComponent
   ],
   imports: [
     BrowserModule,
