@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/sass-lib/lib.scss';
+
+@font-face {
+    font-family: "Graphik";
+    src: url('../public/fonts/Graphik/Graphik-Light-Trial.woff'),
+        url('../public/fonts/Graphik/Graphik-Regular-Trial.woff'),
+        url('../public/fonts/Graphik/Graphik-Medium-Trial.woff'),
+        url('../public/fonts/Graphik/Graphik-Semibold-Trial.woff'),
+        url('../public/fonts/Graphik/Graphik-Bold-Trial.woff');
+    src: url('../public/fonts/Graphik/Graphik-Light-Trial.otf') format('opentype'),
+        url('../public/fonts/Graphik/Graphik-Regular-Trial.otf') format('opentype'),
+        url('../public/fonts/Graphik/Graphik-Medium-Trial.otf') format('opentype'),
+        url('../public/fonts/Graphik/Graphik-Semibold-Trial.otf') format('opentype'),
+        url('../public/fonts/Graphik/Graphik-Bold-Trial.otf') format('opentype');
+}
+
+h1, h2, h3, h4 {
+    font-family: "Graphik", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: $tta-blue;
+}
+
+p, li, a {
+    color: $tta-dark-blue !important;
+}

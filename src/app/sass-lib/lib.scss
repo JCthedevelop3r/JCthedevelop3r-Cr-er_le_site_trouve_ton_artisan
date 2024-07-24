@@ -9,3 +9,24 @@ $tta-green:#82b864;
     width: 100%;
     height: 100%;
 }
+
+.full-w {
+    width: 100%;
+}
+
+.full-h {
+    height: 100%;
+}
+
+.btn-effect {
+    &:focus {
+        outline-color: #0074c7;
+        outline-style: dotted;
+        outline-width: thin;
+        box-shadow: none;
+    }
+    
+    &:active {
+        background-color: rgba(0, 116, 199, 0.3);
+    }    
+}
