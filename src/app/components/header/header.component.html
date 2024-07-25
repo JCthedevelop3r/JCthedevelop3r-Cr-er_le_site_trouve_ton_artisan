@@ -4,42 +4,14 @@
       <div class="content-container">
         <div class="logo-icons-container">
           <div class="logo-container">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" routerLink=""
               ><img
                 src="assets/images/logo-cropped.png"
                 alt="Logo du site Trouve ton artisan"
                 class="logo"
             /></a>
           </div>
-          <div class="right-icons">
-            <div class="magnifying-glass-container">
-              <button (click)="searchToggler()" class="magnifying-glass-button">
-                <img
-                  src="assets/images/loupe-bleue.png"
-                  alt="loupe bleue"
-                  class="magnifying-glass"
-                />
-              </button>
-            </div>
-            <div class="navbar-toggler-container">
-              <button
-                (click)="navbarToggler()"
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <div class="toggler-icon-container">
-                  <span class="toggler-icon"></span>
-                  <span class="action-text">Menu</span>
-                </div>
-                <span class="blue-cross-icon"></span>
-              </button>
-            </div>
-          </div>
+          <app-right-icons id="app-right-icons" />
         </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">

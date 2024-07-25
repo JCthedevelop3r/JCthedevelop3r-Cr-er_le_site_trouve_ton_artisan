@@ -11,6 +11,8 @@ import { FicheArtisanComponent } from './components/fiche-artisan/fiche-artisan.
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { SearchInputComponent } from './components/header/search-input/search-input.component';
 import { MenuBurgerComponent } from './components/header/menu-burger/menu-burger.component';
+import { RightIconsComponent } from './components/header/right-icons/right-icons.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MenuBurgerComponent } from './components/header/menu-burger/menu-burger
     FicheArtisanComponent,
     NotFoundPageComponent,
     SearchInputComponent,
-    MenuBurgerComponent
+    MenuBurgerComponent,
+    RightIconsComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,

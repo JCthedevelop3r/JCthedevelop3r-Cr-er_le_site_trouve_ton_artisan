@@ -1,3 +1,112 @@
+.full-wh, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container .magnifying-glass-button, header .navbar .container-fluid .content-container .logo-icons-container, header .navbar .container-fluid .content-container {
+  width: 100%;
+  height: 100%;
+}
 
+.full-w {
+  width: 100%;
+}
+
+.full-h, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container, header .navbar .container-fluid .content-container .logo-icons-container .right-icons, header .navbar .container-fluid {
+  height: 100%;
+}
+
+.btn-effect:focus, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler:focus, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container .magnifying-glass-button:focus {
+  outline-color: #0074c7;
+  outline-style: dotted;
+  outline-width: thin;
+  box-shadow: none;
+}
+.btn-effect:active, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler:active, header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container .magnifying-glass-button:active {
+  background-color: rgba(0, 116, 199, 0.3);
+}
+
+header {
+  height: 72px;
+  background-color: #fff;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.0793474);
+}
+header #app-search-input {
+  display: none;
+}
+header .navbar {
+  padding: 0;
+  height: 72px;
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-border-radius: 0;
+}
+header .navbar .container-fluid {
+  padding: 0 1.5rem;
+}
+header .navbar .container-fluid .content-container .logo-icons-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .logo-container {
+  width: 50%;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .logo-container .logo {
+  width: 163px;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container {
+  width: 52px;
+  height: 37px;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container .magnifying-glass-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .magnifying-glass-container .magnifying-glass-button .magnifying-glass {
+  width: 22px;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container {
+  width: 51.97px;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler .toggler-icon-container {
+  display: block;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler .toggler-icon-container .toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("../../../../public/assets/images/bouton-menu-burger.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler .toggler-icon-container .action-text {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+header .navbar .container-fluid .content-container .logo-icons-container .right-icons .navbar-toggler-container .navbar-toggler .blue-cross-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background-image: url("../../../../public/assets/images/croix-bleue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
 
 /*# sourceMappingURL=header.component.css.map */
