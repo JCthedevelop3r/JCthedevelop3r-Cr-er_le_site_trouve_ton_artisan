@@ -15,6 +15,11 @@ h1 {
     padding-bottom: 3rem;
 }
 
+.content {
+    display: grid;
+    gap: 4rem;
+}
+
 h2 {
     padding-bottom: 1.5rem;
 }
@@ -46,7 +51,7 @@ h3 {
             top: 2px;
         }
     }
-    
+
     .specialite {
         display: flex;
         align-items: center;
@@ -73,4 +78,58 @@ h3 {
         margin: 0;
     }
     
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 1rem;
+
+    span {
+        color: $tta-red;
+    }
+}
+
+input {
+    margin-bottom: 1.5rem;
+    border: solid 1px $tta-light-blue;
+    background-color: $tta-white;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 1rem;
+}
+
+textarea {
+    border: solid 1px $tta-light-blue;
+    background-color: $tta-white;
+    border-radius: 20px;
+    height: 196px;
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-submit {
+    border: none;
+    background-color: $tta-light-blue;
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    color: #fff;
+}
+
+.lien {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        width: 87.5%;
+
+        a {
+            text-decoration: none;
+        }
+    }
 }
