@@ -1,13 +1,21 @@
-<h1>Erreur 404</h1>
-<p>page non trouvée ...</p>
-<img
-  src="assets/images/not-found-page.png"
-  alt="motif 404 avec une loupe personnifiée au visage mécontent en guise de zéro"
-/>
-<button>
-  Retourner à la page d'accueil
+<main>
+  <div class="blue-line"></div>
+  <h1>Erreur 404</h1>
+  <p class="m-0">page non trouvée ...</p>
   <img
-    src="assets/images/arrow-white-right.png"
-    alt="flèche blanche qui pointe vers la droite"
+    src="assets/images/not-found-page.png"
+    alt="motif 404 avec une loupe personnifiée au visage mécontent en guise de zéro"
+    class="not-found-image"
   />
-</button>
+  <button class="btn-home">
+    <a routerLink="" class="home-link">
+      Retourner à la page d'accueil
+      <div class="arrow-white-right">
+        <img
+          src="assets/images/arrow-white-right.png"
+          alt="flèche blanche qui pointe vers la droite"
+        />
+      </div>
+    </a>
+  </button>
+</main>

@@ -1,0 +1,54 @@
+@import '../../sass-lib/lib.scss';
+
+main {
+    padding: 1.875rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-line {
+    width: 2rem;
+    height: .33rem;
+    background-color: $tta-light-blue;
+    margin: 3rem 0 1.5rem 0;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+.not-found-image {
+    padding: 1.5rem 0;
+    width: 35%;
+    align-self: center;
+}
+
+.btn-home {
+    border: none;
+    background-color: $tta-light-blue;
+    border-radius: 20px;
+    height: 36px;
+    width: 292px;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1.7rem .3rem 1.8rem;
+
+    .home-link {
+        text-decoration: none;
+        height: 36px;
+        color: #fff !important;
+        display: flex;
+        align-items: center;
+        
+        .arrow-white-right {
+            height: 36px;
+            width: 31px;
+            padding: 0.3rem 0rem 0.3rem 0.6rem;
+    
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
