@@ -28,6 +28,7 @@ p {
     display: grid;
 
     img {
+        width: 75vw;
         margin-bottom: 0.875rem;
         border: solid 1px $tta-light-blue;
     }
@@ -38,13 +39,13 @@ p {
 
     .avis {
         display: flex;
-        justify-content: space-between;
-        width: 34%;
+        justify-content: flex-start;
 
         .stars {
             border: none;
             margin: 0;
             height: 17px;
+            width: 93.36px;
             position: relative;
             top: 2px;
         }
@@ -53,12 +54,10 @@ p {
     .specialite {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .localisation {
         display: flex;
-        justify-content: space-between;
     }
 
     address {
@@ -66,77 +65,56 @@ p {
     }
 
     .artisan-1 {
-        .specialite {
-            width: 39.5%;
-
-            p {
-                position: relative;
-                top: 1px;
-            }
-        }
-
         .localisation {
-            width: 92%;
-
             h3 {
-                width: 35%;
+                width: 71%;
+            }
+
+            address {
+                position: relative;
+                top: -1px;
             }
         }
     }
 
     .artisan-2 {
-        .specialite {
-            width: 38%;
-        }
-
         .localisation {
-            width: 86%;
-
             h3 {
-                width: 35%;
+                width: 40%;
             }
 
             address {
                 position: relative;
                 top: -1px;
+                width: 60%;
             }
         }
     }
 
     .artisan-3 {
-        .specialite {
-            width: 43.5%;
-        }
-
         .localisation {
-            width: 92%;
-
             h3 {
-                width: 40.5%;
+                width: 40%;
             }
 
             address {
                 position: relative;
                 top: -1px;
+                width: 60%;
             }
         }
     }
 
     .artisan-4 {
-        .specialite {
-            width: 43.5%;
-        }
-
         .localisation {
-            width: 92%;
-
             h3 {
-                width: 33.5%;
+                width: 40%;
             }
 
             address {
                 position: relative;
                 top: -1px;
+                width: 60%;
             }
         }
     }

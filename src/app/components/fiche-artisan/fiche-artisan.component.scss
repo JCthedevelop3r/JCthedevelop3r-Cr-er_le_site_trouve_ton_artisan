@@ -38,15 +38,19 @@ h3 {
 }
 
 .artisan {
+
+    img {
+        width: 75vw;
+    }
+
     .avis {
         display: flex;
-        justify-content: space-between;
-        width: 34%;
     
         .stars {
             border: none;
             margin: 0;
             height: 17px;
+            width: 93.36px;
             position: relative;
             top: 2px;
         }
@@ -55,29 +59,22 @@ h3 {
     .specialite {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 39.5%;
-    
-        p {
-            position: relative;
-            top: 1px;
-        }
     }
     
     .localisation {
         display: flex;
-        justify-content: space-between;
-        width: 92%;
     
         h3 {
-            width: 35%;
+            width: 40%;
         }
-    }
-    
-    address {
-        margin: 0;
-    }
-    
+
+        address {
+            width: 60%;
+            position: relative;
+            top: -1px;
+            margin: 0;
+        }
+    }   
 }
 
 form {
@@ -122,14 +119,13 @@ textarea {
 
 .lien {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     div {
-        width: 87.5%;
-
         a {
             text-decoration: none;
+            position: relative;
+            top: 1px;
         }
     }
 }

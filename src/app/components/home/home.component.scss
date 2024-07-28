@@ -26,6 +26,7 @@ h2, h3 {
 
 img {
     border: solid 1px $tta-light-blue;
+    width: 75vw;
 }
 
 p {
@@ -54,14 +55,20 @@ p {
 
     .avis {
         display: flex;
-        justify-content: space-between;
-        width: 34%;
+
+        .stars {
+            border: none;
+            margin: 0;
+            height: 17px;
+            width: 93.36px;
+            position: relative;
+            top: 2px;
+        }
     }
 
     .specialite {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .localisation {
@@ -75,8 +82,6 @@ p {
 
     .artisan-1 {
         .specialite {
-            width: 39.5%;
-
             p {
                 position: relative;
                 top: 1px;
@@ -84,58 +89,48 @@ p {
         }
 
         .localisation {
-            width: 92%;
-
             .h4-section-2 {
-                width: 35%;
+                width: 40%;
+            }
+
+            address {
+                width: 60%;
             }
         }
     }
 
     .artisan-2 {
-        .specialite {
-            width: 38%;
-        }
-
         .localisation {
-            width: 86%;
-
             .h4-section-2 {
-                width: 35%;
+                width: 40%;
             }
 
             address {
                 position: relative;
                 top: -1px;
+                width: 60%;
             }
         }
     }
 
     .artisan-3 {
         .specialite {
-            width: 43.5%;
+            p {
+                position: relative;
+                top: 1px;
+            }
         }
-
         .localisation {
-            width: 92%;
-
             .h4-section-2 {
-                width: 40.5%;
+                width: 40%;
             }
 
             address {
                 position: relative;
                 top: -1px;
+                width: 60%;
             }
         }
-    }
-
-    .stars {
-        border: none;
-        margin: 0;
-        height: 17px;
-        position: relative;
-        top: 2px;
     }
 
     p {

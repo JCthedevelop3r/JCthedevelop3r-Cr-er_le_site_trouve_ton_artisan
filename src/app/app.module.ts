@@ -13,6 +13,8 @@ import { SearchInputComponent } from './components/header/search-input/search-in
 import { MenuBurgerComponent } from './components/header/menu-burger/menu-burger.component';
 import { RightIconsComponent } from './components/header/right-icons/right-icons.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { StepComponent } from './components/home/step/step.component';
+import { ArtisanComponent } from './components/artisan/artisan.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     SearchInputComponent,
     MenuBurgerComponent,
     RightIconsComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    StepComponent,
+    ArtisanComponent
   ],
   imports: [
     BrowserModule,
