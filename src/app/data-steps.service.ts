@@ -6,8 +6,6 @@ import { Step } from './components/home/step/step.model';
 })
 export class DataStepsService {
 
-  constructor() { }
-
   dataSteps: Step[] = [
     {
       id: 1,

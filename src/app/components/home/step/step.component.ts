@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataStepsService } from '../../../data-steps.service';
 import { Step } from './step.model';
 
@@ -9,6 +9,12 @@ import { Step } from './step.model';
 })
 export class StepComponent implements OnInit {
   step: Step[] = [];
+
+  @Input() stepTitle: string = '';
+  @Input() srcImg: string = '';
+  @Input() altImg: string = '';
+  @Input() stepSubTitle: string = '';
+  @Input() description: string = '';
 
   constructor(private dataStepsService: DataStepsService) { }
 

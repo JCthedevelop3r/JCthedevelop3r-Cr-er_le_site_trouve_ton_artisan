@@ -9,6 +9,14 @@ import { Artisan } from './artisan.model';
 })
 export class ArtisanComponent implements OnInit {
   artisan: Artisan[] = [];
+
+  @Input() identity: string = '';
+  @Input() pictureArtisan: string = '';
+  @Input() altArtisan: string = '';
+  @Input() pictureStars: string = '';
+  @Input() altStars: string = '';
+  @Input() speciality: string = '';
+  @Input() location: string = '';
   
   constructor(private dataArtisansService: DataArtisansService) {}
 

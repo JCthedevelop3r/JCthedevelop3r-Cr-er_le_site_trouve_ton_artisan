@@ -8,13 +8,8 @@ main {
     padding-bottom: 4rem;
 }
 
-h2, h3 {
+h2 {
     padding-bottom: 1.5rem;
-}
-
-.h4-section-1 {
-    padding-top: 1.5rem;
-    padding-bottom: .5rem;
 }
 
 .blue-line {
@@ -22,11 +17,6 @@ h2, h3 {
     height: .33rem;
     background-color: $tta-light-blue;
     margin: 3rem 0 1.5rem 0;
-}
-
-img {
-    border: solid 1px $tta-light-blue;
-    width: 75vw;
 }
 
 p {
