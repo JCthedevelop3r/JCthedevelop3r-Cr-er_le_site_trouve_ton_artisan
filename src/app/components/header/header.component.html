@@ -1,0 +1,34 @@
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="content-container">
+        <div class="logo-icons-container">
+          <div class="logo-container">
+            <a class="navbar-brand" routerLink=""
+              ><img
+                src="assets/images/logo-cropped.png"
+                alt="Logo du site Trouve ton artisan"
+                class="logo"
+            /></a>
+          </div>
+          <app-right-icons id="app-right-icons" />
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <app-menu-burger />
+      </div>
+    </div>
+  </nav>
+  <app-search-input id="app-search-input" />
+</header>
+
+<!--
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+-->

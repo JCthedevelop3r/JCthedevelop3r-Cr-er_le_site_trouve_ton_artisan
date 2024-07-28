@@ -1,0 +1,15 @@
+@import '../../sass-lib/lib.scss';
+
+.breadcrumb-container {
+    margin-bottom: 3rem
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $tta-light-blue !important;
+    font-size: 0.9rem;
+}

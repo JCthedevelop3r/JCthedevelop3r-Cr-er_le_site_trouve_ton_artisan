@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
-import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListeArtisansComponent } from './components/liste-artisans/liste-artisans.component';
+import { FicheArtisanComponent } from './components/fiche-artisan/fiche-artisan.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   //Plus tard il faudra diriger l'utilisateur vers l'id fiche-artisan qui correspond

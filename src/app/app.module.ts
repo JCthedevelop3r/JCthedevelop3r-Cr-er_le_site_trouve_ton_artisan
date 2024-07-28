@@ -3,12 +3,16 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ListeArtisansComponent } from './liste-artisans/liste-artisans.component';
-import { FicheArtisanComponent } from './fiche-artisan/fiche-artisan.component';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ListeArtisansComponent } from './components/liste-artisans/liste-artisans.component';
+import { FicheArtisanComponent } from './components/fiche-artisan/fiche-artisan.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
+import { SearchInputComponent } from './components/header/search-input/search-input.component';
+import { MenuBurgerComponent } from './components/header/menu-burger/menu-burger.component';
+import { RightIconsComponent } from './components/header/right-icons/right-icons.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     FooterComponent,
     ListeArtisansComponent,
     FicheArtisanComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    SearchInputComponent,
+    MenuBurgerComponent,
+    RightIconsComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,

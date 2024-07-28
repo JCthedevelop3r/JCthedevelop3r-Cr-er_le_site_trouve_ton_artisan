@@ -1,0 +1,25 @@
+@import '../../../sass-lib/lib.scss';
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 79px;
+    z-index: 2;
+    background-color: #fff;
+    width: 100vw;
+    height: 93vh;
+    padding: 0.937rem 0.75rem 0 0.75rem;
+}
+
+.batiment, .services, .fabrication, .alimentation {
+    height: 6.61vh;
+}
+
+a {
+    display: block;
+    width: 100%;
+    padding: 1.175rem 3.75rem 1.175rem 2.25rem;
+    font-size: 1.2rem;
+
+    @extend .btn-effect
+}

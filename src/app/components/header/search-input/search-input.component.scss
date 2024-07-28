@@ -1,0 +1,48 @@
+@import '../../../sass-lib/lib.scss';
+
+.search-input-container {
+    //display: none;
+    height: 70px;
+    padding: 1rem 1.25rem 1rem;
+    box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+
+    .form-container {
+        @extend .full-w;
+        height: 39px;
+
+        .search-input-form {
+            @extend .full-wh;
+
+            .search-input {
+                @extend .full-wh;
+                border-bottom: solid 1px $tta-light-blue;
+                border-top: none;
+                border-right: solid 1px $tta-light-blue;
+                border-left: none;
+                padding: .3rem 1rem;
+            }
+
+            .btn-magnifying-glass {
+                width: 32px;
+                height: 32px;
+                border: none;
+                border-radius: 50%;
+                background-color: transparent;
+                padding: 0;
+                position: absolute;
+                right: 7vw;
+
+
+                #magnifying-glass {
+                    width: 12px;
+                    height: 12px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+    }
+}

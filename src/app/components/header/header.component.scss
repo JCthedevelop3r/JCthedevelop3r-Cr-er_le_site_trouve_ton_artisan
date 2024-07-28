@@ -1,0 +1,47 @@
+@import '../../sass-lib/lib.scss';
+
+header {
+    height: 72px;
+    background-color: #fff;
+    box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
+
+    #app-search-input {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0;
+        height: 72px;
+        --bs-navbar-toggler-border-color: none;
+        --bs-navbar-toggler-border-radius: 0;
+
+        .container-fluid {
+            padding: 0 1.5rem;
+            @extend .full-h;
+            
+            .content-container {
+                @extend .full-wh;
+
+                .logo-icons-container {
+                    display: flex;
+                    align-items: center;
+                    padding-top: .5rem;
+                    @extend .full-wh;
+            
+                    .logo-container {
+                        width: 50%;
+                
+                        .logo {
+                            width: 163px;
+                        }
+                    }
+
+                    #app-right-icons {
+                        width: 50%;
+                        @extend .full-h;
+                    }
+                }
+            }
+        }
+    } 
+}
