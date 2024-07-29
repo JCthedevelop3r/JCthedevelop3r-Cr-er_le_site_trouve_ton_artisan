@@ -18,6 +18,7 @@
     <ul class="artisans no-padding grid gap-5">
       <app-artisan
         *ngFor="let artisan of artisans | slice : 0 : 3"
+        [artisanId]="artisan.id"
         [identity]="artisan.identity"
         [pictureArtisan]="artisan.pictureArtisan"
         [altArtisan]="artisan.altArtisan"

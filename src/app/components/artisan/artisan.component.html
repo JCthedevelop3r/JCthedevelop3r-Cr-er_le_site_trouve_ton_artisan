@@ -1,6 +1,6 @@
 <li class="artisan">
   <h3 class="identity">{{ identity }}</h3>
-  <a routerLink="fiche-artisan">
+  <a [routerLink]="['/fiche-artisan', artisanId]">
     <img [src]="pictureArtisan" [alt]="altArtisan" />
   </a>
   <div class="profil">

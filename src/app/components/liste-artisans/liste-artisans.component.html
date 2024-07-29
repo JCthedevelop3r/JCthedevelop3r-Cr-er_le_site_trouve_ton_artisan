@@ -5,6 +5,7 @@
   <ul class="liste-artisans p-0">
     <app-artisan
       *ngFor="let artisan of filteredArtisans"
+      [artisanId]="artisan.id"
       [identity]="artisan.identity"
       [pictureArtisan]="artisan.pictureArtisan"
       [altArtisan]="artisan.altArtisan"
