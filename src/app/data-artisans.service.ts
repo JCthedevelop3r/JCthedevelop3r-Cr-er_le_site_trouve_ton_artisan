@@ -12,7 +12,7 @@ export class DataArtisansService {
     {
       id: 1,
       identity: "John Doe",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-1.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-1.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -23,7 +23,7 @@ export class DataArtisansService {
     {
       id: 2,
       identity: "Jena Douglas",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-2.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-2.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
@@ -34,7 +34,7 @@ export class DataArtisansService {
     {
       id: 3,
       identity: "Cédric Thomas",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-3.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-3.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -45,7 +45,7 @@ export class DataArtisansService {
     {
       id: 4,
       identity: "Christine Lacraie",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-4.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-4.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -56,7 +56,7 @@ export class DataArtisansService {
     {
       id: 5,
       identity: "Quentin Lejeune",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-5.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-5.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
@@ -67,7 +67,7 @@ export class DataArtisansService {
     {
       id: 6,
       identity: "Jeanne Delion",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-6.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-6.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -78,7 +78,7 @@ export class DataArtisansService {
     {
       id: 7,
       identity: "Fredéric Rameur",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-7.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-7.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
@@ -89,7 +89,7 @@ export class DataArtisansService {
     {
       id: 8,
       identity: "Samira Azzeraoui",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-8.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-8.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -100,7 +100,7 @@ export class DataArtisansService {
     {
       id: 9,
       identity: "Loic Reddy",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-9.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-9.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
@@ -111,7 +111,7 @@ export class DataArtisansService {
     {
       id: 10,
       identity: "Érica Touré",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-10.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-10.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
@@ -122,7 +122,7 @@ export class DataArtisansService {
     {
       id: 11,
       identity: "Paul Dupont",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-11.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-11.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -133,7 +133,7 @@ export class DataArtisansService {
     {
       id: 12,
       identity: "Paula Gonzalez",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-12.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-12.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -144,7 +144,7 @@ export class DataArtisansService {
     {
       id: 13,
       identity: "Francis Ngo",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-13.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-13.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -155,7 +155,7 @@ export class DataArtisansService {
     {
       id: 14,
       identity: "Claire Dupuis",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-14.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-14.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -166,7 +166,7 @@ export class DataArtisansService {
     {
       id: 15,
       identity: "Jean Lecomte",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-15.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-15.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -177,7 +177,7 @@ export class DataArtisansService {
     {
       id: 16,
       identity: "Albert Martin",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-16.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-16.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
@@ -188,7 +188,7 @@ export class DataArtisansService {
     {
       id: 17,
       identity: "Sylvie Bernard",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-17.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-17.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
@@ -199,7 +199,7 @@ export class DataArtisansService {
     {
       id: 18,
       identity: "Karim Petit",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-18.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-18.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
@@ -210,7 +210,7 @@ export class DataArtisansService {
     {
       id: 19,
       identity: "Alexandra Moreau",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-19.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-19.png",
       altArtisan: "Artisane qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
@@ -221,7 +221,7 @@ export class DataArtisansService {
     {
       id: 20,
       identity: "Thomas Dubois",
-      pictureArtisan: "assets/images/img-artisans/image-artisan-20.jpg",
+      pictureArtisan: "assets/images/img-artisans/image-artisan-20.png",
       altArtisan: "Artisan qui sourit",
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
