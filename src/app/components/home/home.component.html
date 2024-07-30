@@ -3,65 +3,31 @@
   <div class="blue-line"></div>
   <section class="guide-trouver-artisan">
     <h2>Comment trouver mon artisan ?</h2>
-    <div class="step-1">
-      <h3>Étape 1</h3>
-      <img
-        src="assets/images/image-step-1.png"
-        alt="Zoom sur une barre de navigation"
-      />
-      <h4 class="h4-section-1">
-        Choisissez la catégorie d'artisanat dans le menu
-      </h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
-      </p>
-    </div>
-    <div class="step-2">
-      <h3>Étape 2</h3>
-      <img
-        src="assets/images/image-step-2.png"
-        alt="curseur pointé vers le profil d'un artisan"
-      />
-      <h4 class="h4-section-1">Choisissez un artisan</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
-      </p>
-    </div>
-    <div class="step-3">
-      <h3>Étape 3</h3>
-      <img src="assets/images/image-step-3.png" alt="Formulaire de contact" />
-      <h4 class="h4-section-1">
-        Contactez l'artisan avec le formulaire de contact
-      </h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
-      </p>
-    </div>
-    <div class="step-4">
-      <h3>Étape 4</h3>
-      <img
-        src="assets/images/image-step-4.png"
-        alt="schéma d'un particulier communiquant avec un artisan avec écrit 48 heures entre les deux"
-      />
-      <h4 class="h4-section-1">Une réponse sera apportée dans 48 heures</h4>
-      <p class="no-padding">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
-      </p>
-    </div>
+    <app-step
+      *ngFor="let step of steps"
+      [stepTitle]="step.stepTitle"
+      [srcImg]="step.srcImg"
+      [altImg]="step.altImg"
+      [stepSubTitle]="step.stepSubtitle"
+      [description]="step.description"
+    ></app-step>
   </section>
   <section class="podium">
     <div class="red-line"></div>
     <h2>Les trois artisans du mois</h2>
     <ul class="artisans no-padding grid gap-5">
-      <li class="artisan-1">
+      <app-artisan
+        *ngFor="let artisan of artisans | slice : 0 : 3"
+        [artisanId]="artisan.id"
+        [identity]="artisan.identity"
+        [pictureArtisan]="artisan.pictureArtisan"
+        [altArtisan]="artisan.altArtisan"
+        [pictureStars]="artisan.pictureStars"
+        [altStars]="artisan.altStars"
+        [speciality]="artisan.speciality"
+        [location]="artisan.location"
+      ></app-artisan>
+      <!--<li class="artisan-1">
         <h3>John Doe</h3>
         <a routerLink="fiche-artisan">
           <img
@@ -141,7 +107,7 @@
             <address>31 Boulevard Pasteur, Clermont-Ferrand, 63000</address>
           </div>
         </div>
-      </li>
+      </li>-->
     </ul>
   </section>
 </main>

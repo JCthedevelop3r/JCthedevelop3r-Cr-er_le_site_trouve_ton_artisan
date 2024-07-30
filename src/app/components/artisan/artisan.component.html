@@ -1,0 +1,20 @@
+<li class="artisan">
+  <h3 class="identity">{{ identity }}</h3>
+  <a [routerLink]="['/fiche-artisan', artisanId]">
+    <img [src]="pictureArtisan" [alt]="altArtisan" />
+  </a>
+  <div class="profil">
+    <div class="avis">
+      <h4 class="h4-section-2">Avis :</h4>
+      <img [src]="pictureStars" [alt]="altStars" class="stars" />
+    </div>
+    <div class="specialite">
+      <h4 class="h4-section-2 full-h">Spécialité :</h4>
+      <p class="m-0">{{ speciality }}</p>
+    </div>
+    <div class="localisation">
+      <h4 class="h4-section-2">Localisation :</h4>
+      <address>{{ location }}</address>
+    </div>
+  </div>
+</li>

@@ -1,27 +1,27 @@
-<main>
+<main *ngIf="artisan">
   <app-breadcrumb />
   <div class="blue-line"></div>
   <h1>Fiche artisan</h1>
   <div class="content">
     <div class="artisan">
-      <h2>John Doe</h2>
-      <img src="assets/images/image-artisan-1.png" alt="artisan qui sourit" />
+      <h2>{{ artisan.identity }}</h2>
+      <img [src]="artisan.pictureArtisan" [alt]="artisan.altArtisan" />
       <div class="profil">
         <div class="avis">
           <h3>Avis :</h3>
           <img
-            src="assets/images/etoiles-jaunes.png"
-            alt="5 étoiles jaunes"
+            [src]="artisan.pictureStars"
+            [alt]="artisan.altStars"
             class="stars"
           />
         </div>
         <div class="specialite">
           <h3>Spécialité :</h3>
-          <p>Bâtiment</p>
+          <p>{{ artisan.speciality }}</p>
         </div>
         <div class="localisation">
           <h3>Localisation :</h3>
-          <address>23 Rue Carnot, Décines-Charpieu, 69150</address>
+          <address>{{ artisan.location }}</address>
         </div>
       </div>
     </div>

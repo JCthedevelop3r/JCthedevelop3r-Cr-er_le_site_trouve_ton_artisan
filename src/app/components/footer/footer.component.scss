@@ -74,11 +74,15 @@ li {
             width: 100%;
         }
 
-        .pointeur-container {
-            padding-right: 1rem;
-
-            img {
-                width: 26px;
+        .pointeur-localisation {
+            display: flex;
+            
+            .pointeur-container {
+                padding-right: 1rem;
+    
+                img {
+                    width: 26px;
+                }
             }
         }
     }
@@ -160,15 +164,14 @@ li {
             justify-content: center;
 
             div {
-                width: 30px;
                 height: 30px;
                 margin-right: 10px;
                 display: flex;
                 align-items: center;
-    
-                .youtube-img {
-                    width: 28px;
-                }
+                    
+                    .youtube-img {
+                        width: 28px;
+                    }
 
                 img {
                     width: 20px;

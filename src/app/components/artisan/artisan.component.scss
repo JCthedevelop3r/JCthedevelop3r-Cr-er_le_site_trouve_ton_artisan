@@ -1,0 +1,60 @@
+@import '../../sass-lib/lib.scss';
+
+.identity {
+    padding-bottom: 1.5rem;
+}
+img {
+    margin-bottom: 0.875rem;
+    width: 65vw;
+    border: solid 1px $tta-light-blue;
+}
+
+.h4-section-2 {
+    font-size: 1rem;
+}
+
+.avis {
+    display: flex;
+
+    .stars {
+        border: none;
+        margin: 0;
+        height: 17px;
+        width: 93.36px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+}
+
+.specialite {
+    display: flex;
+    align-items: center;
+    
+    p {
+        height: 19.19px;
+        padding-bottom: 23px;
+        position: relative;
+        left: 2px;
+    }
+}
+
+.localisation {
+    display: flex;
+
+    .h4-section-2 {
+        width: 40%;
+    }
+
+    address {
+        margin: 0;
+        width: 60%;
+        position: relative;
+        top: -1px;
+        left: 1px;
+    }
+}
+
+address {
+    margin: 0;
+}
