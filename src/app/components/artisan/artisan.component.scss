@@ -5,7 +5,8 @@
 }
 img {
     margin-bottom: 0.875rem;
-    width: 65vw;
+    width: 208px;
+    height: 148.56px;
     border: solid 1px $tta-light-blue;
 }
 
@@ -42,13 +43,18 @@ img {
 .localisation {
     display: flex;
 
-    .h4-section-2 {
-        width: 40%;
+    .colon {
+        font-family: 'Graphik', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $tta-blue;
+        position: relative;
+        top: -3px;
+        padding: 0 .1rem;
     }
 
     address {
         margin: 0;
-        width: 60%;
         position: relative;
         top: -1px;
         left: 1px;

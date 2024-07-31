@@ -40,7 +40,8 @@ h3 {
 .artisan {
 
     img {
-        width: 75vw;
+        width: 208px;
+        height: 148.55px;
     }
 
     .avis {
@@ -59,17 +60,28 @@ h3 {
     .specialite {
         display: flex;
         align-items: center;
+
+        p {
+            position: relative;
+            top: 1px;
+            left: 1px;
+        }
     }
     
     .localisation {
         display: flex;
-    
-        h3 {
-            width: 40%;
+
+        .colon {
+            font-family: 'Graphik', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $tta-blue;
+            position: relative;
+            top: -3px;
+            padding: 0 .1rem;
         }
 
         address {
-            width: 60%;
             position: relative;
             top: -1px;
             margin: 0;
