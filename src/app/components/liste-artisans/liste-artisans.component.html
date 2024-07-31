@@ -4,6 +4,7 @@
   <h1>Les artisans de la région</h1>
   <ul class="liste-artisans p-0">
     <app-artisan
+      class="col-md-6"
       *ngFor="let artisan of filteredArtisans"
       [artisanId]="artisan.id"
       [identity]="artisan.identity"
