@@ -1,8 +1,14 @@
 <div class="step">
-  <h3>{{ stepTitle }}</h3>
-  <img [src]="srcImg" [alt]="altImg" />
-  <h4 class="h4-section-1">{{ stepSubTitle }}</h4>
-  <p>
-    {{ description }}
-  </p>
+  <div class="step-content">
+    <div class="step-visual-container">
+      <h3>{{ stepTitle }}</h3>
+      <img [src]="srcImg" [alt]="altImg" />
+    </div>
+    <section class="description-container">
+      <h4 class="h4-section-1">{{ stepSubTitle }}</h4>
+      <p>
+        {{ description }}
+      </p>
+    </section>
+  </div>
 </div>

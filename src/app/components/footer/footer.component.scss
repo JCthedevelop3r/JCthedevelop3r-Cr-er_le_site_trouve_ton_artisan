@@ -1,4 +1,5 @@
 @import '../../sass-lib/lib.scss';
+@import '../../sass-lib/responsive.scss';
 
 footer {
     background-color: $tta-light-blue;
@@ -103,6 +104,17 @@ li {
                 text-decoration: none;
                 color: #fff !important;
             }
+        }
+    }
+
+}
+
+@media #{$tablet-up} {
+    .footer-main {
+        display: flex;
+
+        .info-tel {
+            padding-top: 43.19px !important;
         }
     }
 }
