@@ -1,4 +1,5 @@
 @import '../../sass-lib/lib.scss';
+@import '../../sass-lib/responsive.scss';
 
 main {
     padding: 1.875rem 1.875rem 0 1.875rem;
@@ -19,8 +20,15 @@ h1 {
 
 .not-found-image {
     padding: 1.5rem 0;
-    width: 35%;
+    width: 130px;
     align-self: center;
+}
+
+@media #{$tablet-up} {
+    .not-found-image {
+        padding: 1.5rem 0;
+        width: 180px;
+    }
 }
 
 .btn-home {
