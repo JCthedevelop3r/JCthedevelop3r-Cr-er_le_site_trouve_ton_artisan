@@ -19,16 +19,4 @@ export class FicheArtisanComponent implements OnInit {
       this.artisan = this.dataArtisansService.dataArtisans.find(artisan => artisan.id === +artisanId)
     }
   }
-
-  /*artisan: Artisan | undefined;
-  artisanId!: string;
-
-  constructor(private dataArtisansService: DataArtisansService, private activatedRoute: ActivatedRoute) {}
-
-  ngOnInit() {
-    this.activatedRoute.paramMap.subscribe(params => {
-      this.artisanId = params.get('id')!;
-      this.artisan = this.dataArtisansService.dataArtisans.find(artisan => artisan.id === +this.artisanId);
-    });
-  }*/
 }

@@ -1,4 +1,6 @@
-<main *ngIf="artisan">
+<!-- Template qui s'affiche jusqu'à de 767px. -->
+
+<main *ngIf="artisan" class="main-mobile">
   <app-breadcrumb />
   <div class="blue-line"></div>
   <h1>Fiche artisan</h1>
@@ -7,6 +9,66 @@
       <h2>{{ artisan.identity }}</h2>
       <img [src]="artisan.pictureArtisan" [alt]="artisan.altArtisan" />
       <div class="profil">
+        <div class="avis">
+          <h3>Avis :</h3>
+          <img
+            [src]="artisan.pictureStars"
+            [alt]="artisan.altStars"
+            class="stars"
+          />
+        </div>
+        <div class="specialite">
+          <h3>Spécialité :</h3>
+          <p>{{ artisan.speciality }}</p>
+        </div>
+        <div class="localisation">
+          <h3>Localisation</h3>
+          <div class="colon">:</div>
+          <address>{{ artisan.location }}</address>
+        </div>
+      </div>
+    </div>
+    <section class="a-propos">
+      <h2>À propos</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
+        amet cursus tortor mi tempus dolor.
+      </p>
+    </section>
+    <div class="form-container">
+      <h2>Formulaire de contact</h2>
+      <form action="">
+        <label for="">Nom<span>*</span> :</label>
+        <input type="text" />
+        <label for="">Objet<span>*</span> :</label>
+        <input type="text" />
+        <label for="">Message<span>*</span> :</label>
+        <textarea name="" id=""></textarea>
+        <input type="submit" value="Soumettre" class="btn-submit p-0 m-0" />
+      </form>
+    </div>
+    <div class="website">
+      <h2>Site web</h2>
+      <div class="lien">
+        <h3>Lien :</h3>
+        <div><a href="">johndoe-artisan.com</a></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Template qui s'affiche à partir de 768px. -->
+
+<main *ngIf="artisan" class="main-tablet-up">
+  <app-breadcrumb />
+  <div class="blue-line"></div>
+  <h1>Fiche artisan</h1>
+  <div class="content">
+    <div class="artisan">
+      <img [src]="artisan.pictureArtisan" [alt]="artisan.altArtisan" />
+      <div class="profil">
+        <h2>{{ artisan.identity }}</h2>
         <div class="avis">
           <h3>Avis :</h3>
           <img
