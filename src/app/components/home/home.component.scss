@@ -1,11 +1,19 @@
 @import '../../sass-lib/lib.scss';
+@import '../../sass-lib/responsive.scss';
 
 main {
     padding: 4rem 1.875rem 0 1.875rem;
 }
 
 .guide-trouver-artisan {
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 4rem;
+}
+
+app-step {
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -31,99 +39,204 @@ p {
     margin: 0rem 0 1.5rem 0;
 }
 
-.artisans {
-    list-style-type: none;
-    display: grid;
-
-    img {
-        margin-bottom: 0.875rem;
-    }
-
-    .h4-section-2 {
-        font-size: 1rem;
-    }
-
-    .avis {
-        display: flex;
-
-        .stars {
-            border: none;
+@media #{$mobile-max} {
+    .artisans {
+        list-style-type: none;
+        display: grid;
+    
+        img {
+            margin-bottom: 0.875rem;
+        }
+    
+        .h4-section-2 {
+            font-size: 1rem;
+        }
+    
+        .avis {
+            display: flex;
+    
+            .stars {
+                border: none;
+                margin: 0;
+                height: 17px;
+                width: 93.36px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    
+        .specialite {
+            display: flex;
+            align-items: center;
+        }
+    
+        .localisation {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        address {
             margin: 0;
-            height: 17px;
-            width: 93.36px;
-            position: relative;
-            top: 2px;
+        }
+    
+        .artisan-1 {
+            .specialite {
+                p {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+    
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    width: 60%;
+                }
+            }
+        }
+    
+        .artisan-2 {
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    position: relative;
+                    top: -1px;
+                    width: 60%;
+                }
+            }
+        }
+    
+        .artisan-3 {
+            .specialite {
+                p {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    position: relative;
+                    top: -1px;
+                    width: 60%;
+                }
+            }
+        }
+    
+        p {
+            padding: 0;
         }
     }
+}
 
-    .specialite {
+@media #{$tablet-up} {
+    h2 {
+        padding-bottom: 3rem;
+    }
+    .artisans {
+        list-style-type: none;
         display: flex;
-        align-items: center;
-    }
-
-    .localisation {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    address {
-        margin: 0;
-    }
-
-    .artisan-1 {
+        gap: 0 !important;
+    
+        img {
+            margin-bottom: 0.875rem;
+        }
+    
+        .h4-section-2 {
+            font-size: 1rem;
+        }
+    
+        .avis {
+            display: flex;
+    
+            .stars {
+                border: none;
+                margin: 0;
+                height: 17px;
+                width: 93.36px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    
         .specialite {
-            p {
-                position: relative;
-                top: 1px;
-            }
+            display: flex;
+            align-items: center;
         }
-
+    
         .localisation {
-            .h4-section-2 {
-                width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        address {
+            margin: 0;
+        }
+    
+        .artisan-1 {
+            .specialite {
+                p {
+                    position: relative;
+                    top: 1px;
+                }
             }
-
-            address {
-                width: 60%;
+    
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    width: 60%;
+                }
             }
         }
-    }
-
-    .artisan-2 {
-        .localisation {
-            .h4-section-2 {
-                width: 40%;
-            }
-
-            address {
-                position: relative;
-                top: -1px;
-                width: 60%;
-            }
-        }
-    }
-
-    .artisan-3 {
-        .specialite {
-            p {
-                position: relative;
-                top: 1px;
+    
+        .artisan-2 {
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    position: relative;
+                    top: -1px;
+                    width: 60%;
+                }
             }
         }
-        .localisation {
-            .h4-section-2 {
-                width: 40%;
+    
+        .artisan-3 {
+            .specialite {
+                p {
+                    position: relative;
+                    top: 1px;
+                }
             }
-
-            address {
-                position: relative;
-                top: -1px;
-                width: 60%;
+            .localisation {
+                .h4-section-2 {
+                    width: 40%;
+                }
+    
+                address {
+                    position: relative;
+                    top: -1px;
+                    width: 60%;
+                }
             }
         }
-    }
-
-    p {
-        padding: 0;
+    
+        p {
+            padding: 0;
+        }
     }
 }
