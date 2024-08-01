@@ -1,0 +1,22 @@
+@import './sass-lib/lib.scss';
+@import './sass-lib/responsive.scss';
+
+@media #{$laptop-up} {
+    app-header {
+        display: none;
+    }
+
+    app-header-2 {
+        display: block;
+    }
+}
+
+@media #{$laptop-max} {
+    app-header {
+        display: block;
+    }
+    
+    app-header-2 {
+        display: none;
+    }
+}
