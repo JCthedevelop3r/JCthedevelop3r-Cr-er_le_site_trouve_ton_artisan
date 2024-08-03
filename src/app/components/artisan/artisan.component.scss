@@ -11,13 +11,23 @@ img {
     border: solid 1px $tta-light-blue;
 }
 
-.h4-section-2 {
+h3, h4 {
     font-size: 1rem;
 }
 
 .avis {
     display: flex;
 
+    .colon {
+        font-family: 'Graphik', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $tta-blue;
+        position: relative;
+        top: -3px;
+        padding: 0 .1rem;
+    }
+    
     .stars {
         border: none;
         margin: 0;
@@ -32,6 +42,16 @@ img {
 .specialite {
     display: flex;
     align-items: center;
+
+    .colon {
+        font-family: 'Graphik', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $tta-blue;
+        position: relative;
+        top: -1px;
+        padding: 0 .1rem;
+    }
     
     p {
         height: 19.19px;

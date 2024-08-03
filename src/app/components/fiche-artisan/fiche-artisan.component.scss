@@ -4,7 +4,7 @@
 @media #{$mobile-max} {
     .main-mobile {
         display: block;
-        padding: 1.875rem 1.875rem 0 1.875rem;
+        padding: 1.875rem 1.875rem 4rem 1.875rem;
     }
 
     .main-tablet-up {
@@ -53,6 +53,16 @@
     
         .avis {
             display: flex;
+
+            .colon {
+                font-family: 'Graphik', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $tta-blue;
+                position: relative;
+                top: -3px;
+                padding: 0 .1rem;
+            }
         
             .stars {
                 border: none;
@@ -67,6 +77,16 @@
         .specialite {
             display: flex;
             align-items: center;
+
+            .colon {
+                font-family: 'Graphik', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $tta-blue;
+                position: relative;
+                top: -1px;
+                padding: 0 .1rem;
+            }
     
             p {
                 position: relative;
@@ -156,7 +176,7 @@
     }
     .main-tablet-up {
         display: block;
-        padding: 1.875rem 1.875rem 0 1.875rem;
+        padding: 1.875rem 1.875rem 4rem 1.875rem;
     }
 
     .blue-line {
@@ -203,6 +223,16 @@
     
         .avis {
             display: flex;
+
+            .colon {
+                font-family: 'Graphik', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $tta-blue;
+                position: relative;
+                top: -3px;
+                padding: 0 .1rem;
+            }
         
             .stars {
                 border: none;
@@ -217,6 +247,16 @@
         .specialite {
             display: flex;
             align-items: center;
+
+            .colon {
+                font-family: 'Graphik', sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: $tta-blue;
+                position: relative;
+                top: -1px;
+                padding: 0 .1rem;
+            }
     
             p {
                 position: relative;

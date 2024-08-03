@@ -1,21 +1,51 @@
+<!-- Les headings de ce composant changent en fonction de la page sur laquelle il est utilisé. -->
+
 <li class="artisan">
-  <h3 class="identity">{{ identity }}</h3>
-  <a [routerLink]="['/fiche-artisan', artisanId]">
-    <img [src]="pictureArtisan" [alt]="altArtisan" class="picture-artisan" />
-  </a>
-  <div class="profil">
-    <div class="avis">
-      <h4 class="h4-section-2">Avis :</h4>
-      <img [src]="pictureStars" [alt]="altStars" class="stars" />
+  <ng-container *ngIf="isListPage; else defaultTemplate">
+    <h2 class="identity">{{ identity }}</h2>
+    <a [routerLink]="['/fiche-artisan', artisanId]">
+      <img [src]="pictureArtisan" [alt]="altArtisan" class="picture-artisan" />
+    </a>
+    <div class="profil">
+      <div class="avis">
+        <h3>Avis</h3>
+        <div class="colon">:</div>
+        <img [src]="pictureStars" [alt]="altStars" class="stars" />
+      </div>
+      <div class="specialite">
+        <h3 class="full-h">Spécialité</h3>
+        <div class="colon">:</div>
+        <p class="m-0">{{ speciality }}</p>
+      </div>
+      <div class="localisation">
+        <h3>Localisation</h3>
+        <div class="colon">:</div>
+        <address>{{ location }}</address>
+      </div>
     </div>
-    <div class="specialite">
-      <h4 class="h4-section-2 full-h">Spécialité :</h4>
-      <p class="m-0">{{ speciality }}</p>
+  </ng-container>
+
+  <ng-template #defaultTemplate>
+    <h3 class="identity">{{ identity }}</h3>
+    <a [routerLink]="['/fiche-artisan', artisanId]">
+      <img [src]="pictureArtisan" [alt]="altArtisan" class="picture-artisan" />
+    </a>
+    <div class="profil">
+      <div class="avis">
+        <h4>Avis</h4>
+        <div class="colon">:</div>
+        <img [src]="pictureStars" [alt]="altStars" class="stars" />
+      </div>
+      <div class="specialite">
+        <h4 class="full-h">Spécialité</h4>
+        <div class="colon">:</div>
+        <p class="m-0">{{ speciality }}</p>
+      </div>
+      <div class="localisation">
+        <h4>Localisation</h4>
+        <div class="colon">:</div>
+        <address>{{ location }}</address>
+      </div>
     </div>
-    <div class="localisation">
-      <h4 class="h4-section-2">Localisation</h4>
-      <div class="colon">:</div>
-      <address>{{ location }}</address>
-    </div>
-  </div>
+  </ng-template>
 </li>
