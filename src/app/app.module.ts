@@ -18,6 +18,7 @@ import { ArtisanComponent } from './components/artisan/artisan.component';
 import { Header2Component } from './components/header-2/header-2.component';
 import { MenuLaptopComponent } from './components/header-2/menu-laptop/menu-laptop.component';
 import { SearchInput2Component } from './components/header-2/search-input-2/search-input-2.component';
+import { Header3Component } from './components/header-3/header-3.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { SearchInput2Component } from './components/header-2/search-input-2/sear
     ArtisanComponent,
     Header2Component,
     MenuLaptopComponent,
-    SearchInput2Component
+    SearchInput2Component,
+    Header3Component
   ],
   imports: [
     BrowserModule,

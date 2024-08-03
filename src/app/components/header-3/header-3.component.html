@@ -1,19 +1,21 @@
 <header>
   <nav class="navbar navbar-expand-lg full-wh p-0">
-    <div class="container-fluid full-wh">
+    <div class="container-fluid full-wh p-0 m-0">
       <div class="content-container full-wh">
-        <div class="logo-search-input-container">
+        <div class="logo-right-content-container full-wh">
           <div class="logo-container">
-            <a class="navbar-brand p-0 m-0" routerLink=""
+            <a class="navbar-brand m-0 full-h" routerLink=""
               ><img
                 src="assets/images/logo-cropped.png"
                 alt="Logo du site Trouve ton artisan"
                 class="logo"
             /></a>
           </div>
-          <app-search-input-2 />
+          <div class="right-content-container">
+            <app-search-input-2 />
+            <app-menu-laptop />
+          </div>
         </div>
-        <app-menu-laptop class="full-h" />
       </div>
     </div>
   </nav>

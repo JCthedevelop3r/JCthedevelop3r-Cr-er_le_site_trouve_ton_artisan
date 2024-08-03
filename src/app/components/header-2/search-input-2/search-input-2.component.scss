@@ -1,10 +1,11 @@
 @import '../../../sass-lib/lib.scss';
+@import '../../../sass-lib/responsive.scss';
 
 .search-input-container {
     width: 273px;
     height: 39px;
     background-color: #fff;
-    padding-top: 5px;
+    padding-top: 15px;
 
     .form-container {
         @extend .full-w;
@@ -22,22 +23,46 @@
                 padding: .3rem 1rem;
             }
 
-            .btn-magnifying-glass {
-                width: 32px;
-                height: 32px;
-                border: none;
-                border-radius: 50%;
-                background-color: transparent;
-                padding: 0;
-                position: absolute;
-                right: 4vw;
+            @media #{$desktop-max} {
+                .btn-magnifying-glass {
+                    width: 32px;
+                    height: 32px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    padding: 0;
+                    position: absolute;
+                    right: 4vw;
+    
+    
+                    #magnifying-glass {
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+            }
 
-
-                #magnifying-glass {
-                    width: 12px;
-                    height: 12px;
-                    position: relative;
-                    top: 1px;
+            @media #{$desktop-up} {
+                .btn-magnifying-glass {
+                    width: 32px;
+                    height: 32px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    padding: 0;
+                    position: absolute;
+                    right: 38px;
+    
+    
+                    #magnifying-glass {
+                        width: 12px;
+                        height: 12px;
+                        position: relative;
+                        top: 1px;
+                        right: 3px;
+                    }
                 }
             }
         }
