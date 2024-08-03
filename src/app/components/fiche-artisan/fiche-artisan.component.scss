@@ -300,21 +300,9 @@
     }
 }
 
-@media #{$desktop-max} {
-    .picture-artisan {
-        width: 250px !important;
-        height: inherit;
-    }
-}
-
 @media #{$desktop-up} {
     main {
         width: 1160px;
         margin: 0 auto;
-    }
-
-    .picture-artisan {
-        width: 329.98px;
-        height: inherit;
     }
 }

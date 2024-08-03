@@ -60,3 +60,10 @@ h1 {
         }
     }
 }
+
+@media #{$desktop-up} {
+    main {
+        width: 1160px;
+        margin: 0 auto;
+    }
+}
