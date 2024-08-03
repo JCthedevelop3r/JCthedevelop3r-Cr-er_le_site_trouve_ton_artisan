@@ -201,6 +201,13 @@
             width: 208px;
             height: 148.55px;
         }
+
+        @media #{$laptop-up} {
+            img {
+                width: 250px;
+                height: inherit;
+            }
+        }
     
         .avis {
             display: flex;
