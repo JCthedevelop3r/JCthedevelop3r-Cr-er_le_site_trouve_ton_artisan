@@ -4,7 +4,7 @@
   <section class="guide-trouver-artisan">
     <h2>Comment trouver mon artisan ?</h2>
     <app-step
-      class="col-md-6"
+      class="col-md-6 col-lg-3"
       *ngFor="let step of steps"
       [stepTitle]="step.stepTitle"
       [srcImg]="step.srcImg"
@@ -29,87 +29,6 @@
         [speciality]="artisan.speciality"
         [location]="artisan.location"
       ></app-artisan>
-      <!--<li class="artisan-1">
-        <h3>John Doe</h3>
-        <a routerLink="fiche-artisan">
-          <img
-            src="assets/images/image-artisan-1.png"
-            alt="artisan qui sourit"
-          />
-        </a>
-        <div class="profil">
-          <div class="avis">
-            <h4 class="h4-section-2">Avis :</h4>
-            <img
-              src="assets/images/etoiles-jaunes.png"
-              alt="5 étoiles jaunes"
-              class="stars"
-            />
-          </div>
-          <div class="specialite">
-            <h4 class="h4-section-2">Spécialité :</h4>
-            <p>Bâtiment</p>
-          </div>
-          <div class="localisation">
-            <h4 class="h4-section-2">Localisation :</h4>
-            <address>23 Rue Carnot, Décines-Charpieu, 69150</address>
-          </div>
-        </div>
-      </li>
-      <li class="artisan-2">
-        <h3>Jeanne Delion</h3>
-        <a routerLink="fiche-artisan">
-          <img
-            src="assets/images/image-artisan-2.png"
-            alt="artisane qui sourit"
-          />
-        </a>
-        <div class="profil">
-          <div class="avis">
-            <h4 class="h4-section-2">Avis :</h4>
-            <img
-              src="assets/images/etoiles-jaunes.png"
-              alt="5 étoiles jaunes"
-              class="stars"
-            />
-          </div>
-          <div class="specialite">
-            <h4 class="h4-section-2">Spécialité :</h4>
-            <p>Services</p>
-          </div>
-          <div class="localisation">
-            <h4 class="h4-section-2">Localisation :</h4>
-            <address>19 Rue de la Corderie, Lyon, 69009</address>
-          </div>
-        </div>
-      </li>
-      <li class="artisan-3">
-        <h3>Paul Dupont</h3>
-        <a routerLink="fiche-artisan">
-          <img
-            src="assets/images/image-artisan-3.png"
-            alt="artisan qui sourit"
-          />
-        </a>
-        <div class="profil">
-          <div class="avis">
-            <h4 class="h4-section-2">Avis :</h4>
-            <img
-              src="assets/images/etoiles-jaunes.png"
-              alt="5 étoiles jaunes"
-              class="stars"
-            />
-          </div>
-          <div class="specialite">
-            <h4 class="h4-section-2">Spécialité :</h4>
-            <p>Fabrication</p>
-          </div>
-          <div class="localisation">
-            <h4 class="h4-section-2">Localisation :</h4>
-            <address>31 Boulevard Pasteur, Clermont-Ferrand, 63000</address>
-          </div>
-        </div>
-      </li>-->
     </ul>
   </section>
 </main>

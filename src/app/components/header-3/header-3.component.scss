@@ -1,0 +1,39 @@
+@import '../../sass-lib/lib.scss';
+
+header {
+    height: 135.19px;
+    box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
+
+    nav {
+        width: 1160px;
+        padding: 0 1.875rem 0 1.875rem !important;
+        margin: auto;
+    }
+}
+
+.logo-right-content-container {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-container {
+        padding-top: 21.19px;
+
+        a {
+            display: flex;
+            align-items: center;
+            width: 225px;
+            height: 114px;
+            padding: 0 0 30px 0;
+            img {
+                @extend .full-w;
+            }
+        }
+    }
+
+    .right-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}

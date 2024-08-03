@@ -198,8 +198,7 @@
         column-gap: 1.25rem;
     
         img {
-            width: 208px;
-            height: 148.55px;
+            width: 27.08%;
         }
     
         .avis {
@@ -298,5 +297,12 @@
                 top: 1px;
             }
         }
+    }
+}
+
+@media #{$desktop-up} {
+    main {
+        width: 1160px;
+        margin: 0 auto;
     }
 }

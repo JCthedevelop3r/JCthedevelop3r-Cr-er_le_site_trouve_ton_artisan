@@ -128,3 +128,10 @@ p {
         row-gap: 4rem;
     }
 }
+
+@media #{$desktop-up} {
+    main {
+        width: 1160px;
+        margin: 0 auto;
+    }
+}

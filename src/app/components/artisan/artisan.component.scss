@@ -67,7 +67,31 @@ address {
 }
 
 @media #{$tablet-up} {
+    .artisan {
+        width: 90%;
+    }
+
+    .picture-artisan {
+        width: 100%;
+        height: inherit;
+    }
+
     .profil {
-        width: 208px;
+        width: 100%;
+    }
+}
+
+@media #{$laptop-up} {
+    .artisan {
+        width: 90%;
+    }
+
+    .picture-artisan {
+        width: 100%;
+        height: inherit;
+    }
+
+    .profil {
+        width: 100%;
     }
 }

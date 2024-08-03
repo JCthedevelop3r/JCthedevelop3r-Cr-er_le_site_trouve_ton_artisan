@@ -21,7 +21,7 @@ $tta-green:#82b864;
 .btn-effect {
     &:focus {
         outline-color: #0074c7;
-        outline-style: dotted;
+        outline-style: dotted !important;
         outline-width: thin;
         box-shadow: none;
     }

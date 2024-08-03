@@ -240,3 +240,16 @@ p {
         }
     }
 }
+
+@media #{$laptop-up} {
+    h2 {
+        width: 100%;
+    }
+}
+
+@media #{$desktop-up} {
+    main {
+        width: 1160px;
+        margin: 0 auto;
+    }
+}

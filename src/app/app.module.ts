@@ -15,6 +15,11 @@ import { RightIconsComponent } from './components/header/right-icons/right-icons
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { StepComponent } from './components/home/step/step.component';
 import { ArtisanComponent } from './components/artisan/artisan.component';
+import { Header2Component } from './components/header-2/header-2.component';
+import { MenuLaptopComponent } from './components/header-2/menu-laptop/menu-laptop.component';
+import { SearchInput2Component } from './components/header-2/search-input-2/search-input-2.component';
+import { Header3Component } from './components/header-3/header-3.component';
+import { Footer2Component } from './components/footer-2/footer-2.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { ArtisanComponent } from './components/artisan/artisan.component';
     RightIconsComponent,
     BreadcrumbComponent,
     StepComponent,
-    ArtisanComponent
+    ArtisanComponent,
+    Header2Component,
+    MenuLaptopComponent,
+    SearchInput2Component,
+    Header3Component,
+    Footer2Component,
   ],
   imports: [
     BrowserModule,

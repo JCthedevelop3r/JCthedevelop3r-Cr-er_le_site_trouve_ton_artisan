@@ -1,0 +1,90 @@
+@import './sass-lib/lib.scss';
+@import './sass-lib/responsive.scss';
+
+@media #{$laptop-max} {
+    app-header {
+        display: block;
+    }
+    
+    app-header-2 {
+        display: none;
+    }
+
+    app-header-3 {
+        display: none;
+    }
+
+    app-footer {
+        display: block;
+    }
+
+    app-footer-2 {
+        display: none;
+    }
+}
+
+@media #{$laptop-up} {
+    app-header {
+        display: none;
+    }
+
+    app-header-2 {
+        display: block;
+    }
+
+    app-header-3 {
+        display: none;
+    }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
+        display: block;
+    }
+}
+
+@media #{$desktop-max} {
+    app-header-1 {
+        display: none;
+    }
+
+    app-header-2 {
+        display: block;
+    }
+
+    app-header-3 {
+        display: none;
+    }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
+        display: block;
+    }
+}
+
+@media #{$desktop-up} {
+    app-header-1 {
+        display: none;
+    }
+    
+    app-header-2 {
+        display: none;
+    }
+
+    app-header-3 {
+        display: block;
+    }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
+        display: block;
+    }
+}
