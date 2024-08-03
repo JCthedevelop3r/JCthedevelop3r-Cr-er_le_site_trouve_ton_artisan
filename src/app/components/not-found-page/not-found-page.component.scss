@@ -2,7 +2,7 @@
 @import '../../sass-lib/responsive.scss';
 
 main {
-    padding: 1.875rem 1.875rem 0 1.875rem;
+    padding: 1.875rem 1.875rem 4rem 1.875rem;
     display: flex;
     flex-direction: column;
 }
@@ -34,12 +34,10 @@ h1 {
 .btn-home {
     border: none;
     background-color: $tta-light-blue;
-    border-radius: 20px;
-    height: 36px;
-    width: 292px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
-    padding: 0.3rem 1.7rem .3rem 1.8rem;
+    max-width: 304px;
 
     .home-link {
         text-decoration: none;
@@ -47,6 +45,7 @@ h1 {
         color: #fff !important;
         display: flex;
         align-items: center;
+        padding: .5rem 1.7rem .5rem 1.8rem;
         
         .arrow-white-right {
             height: 36px;

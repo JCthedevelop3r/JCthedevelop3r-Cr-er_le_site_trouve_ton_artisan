@@ -171,13 +171,13 @@ li {
         color: $tta-dark-blue;
         padding: 1.25rem 0;
 
-        .logo-container {
+        .logos-container {
             display: flex;
             justify-content: center;
 
-            div {
+            .logo-container {
+                width: 40px;
                 height: 30px;
-                margin-right: 10px;
                 display: flex;
                 align-items: center;
                     
@@ -188,6 +188,19 @@ li {
                 img {
                     width: 20px;
                     height: 20px;
+                }
+            }
+
+            .instagram-x-container {
+                display: flex;
+                position: relative;
+                left: 8px;
+                
+                .logo-container {
+                    width: 40px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }

@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataArtisansService } from '../../data-artisans.service';
-import { Artisan } from './artisan.model';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-artisan',
@@ -18,8 +16,13 @@ export class ArtisanComponent implements OnInit {
   @Input() location: string = '';
   @Input() artisanId!: number;
 
-  constructor() {}
+  isListPage: boolean = false;
 
-  ngOnInit() {
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.events.subscribe(() => {
+      this.isListPage = this.router.url.includes('/liste-artisan');
+    });
   }
 }

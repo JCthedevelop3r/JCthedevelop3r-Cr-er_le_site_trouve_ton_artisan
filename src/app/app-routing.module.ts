@@ -10,7 +10,8 @@ const routes: Routes = [
   // à la spécialité de l'artisan(bâtiment, services, fabrication, alimentation).
   { path: 'fiche-artisan/:id', component: FicheArtisanComponent },
   { path: 'liste-artisans/:speciality', component: ListeArtisansComponent },
-  { path: '', component: HomeComponent},
+  { path: 'accueil', component: HomeComponent },
+  { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: '**', component: NotFoundPageComponent }
 ];
 
