@@ -17,7 +17,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Bâtiment",
-      location: "23 Rue Carnot, Décines-Charpieu, 69150"
+      location: "23 Rue Carnot, Décines-Charpieu, 69150",
+      about: "John Doe, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      website:"johndoe-artisan.com",
     },
 
     {
@@ -28,7 +30,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
       speciality: "Bâtiment",
-      location: "103 Rue de la Vaillance, Clermont-Ferrand, 63100"
+      location: "103 Rue de la Vaillance, Clermont-Ferrand, 63100",
+      about: "Jena Douglas, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      website:"jeandouglas-artisan.com",
     },
 
     {
@@ -39,7 +43,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Bâtiment",
-      location: "47 Rue du Cheval, Clermont-Ferrand, 63100"
+      location: "47 Rue du Cheval, Clermont-Ferrand, 63100",
+      about: "Cédric Thomas, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      website:"cédricthomas-artisan.com",
     },
 
     {
@@ -50,7 +56,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Bâtiment",
-      location: "18 Rue Fantin Latour, Grenoble, 38000"
+      location: "18 Rue Fantin Latour, Grenoble, 38000",
+      about: "Christine Lacraie, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      website:"christinelacraie-artisan.com",
     },
 
     {
@@ -61,7 +69,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
       speciality: "Bâtiment",
-      location: "19 Rue Sisteron, Seyssinet-Pariset, 38170"
+      location: "19 Rue Sisteron, Seyssinet-Pariset, 38170",
+      about: "Quentin Lejeune, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      website:"quentinlejeune-artisan.com",
     },
 
     {
@@ -72,7 +82,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Services",
-      location: "19 Rue de la Corderie, Lyon, 69009"
+      location: "19 Rue de la Corderie, Lyon, 69009",
+      about: "Jeanne Delion, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      website:"jeannedelion-artisan.com",
     },
 
     {
@@ -83,7 +95,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
       speciality: "Services",
-      location: "5 Rue Jean Zay, Lyon, 69009"
+      location: "5 Rue Jean Zay, Lyon, 69009",
+      about: "Fredéric Rameur, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      website:"fredéricrameur-artisan.com",
     },
 
     {
@@ -94,7 +108,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Services",
-      location: "21 Rue Maréchal Foch, Villeurbanne, 69100"
+      location: "21 Rue Maréchal Foch, Villeurbanne, 69100",
+      about: "Samira Azzeraoui, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      website:"samiraazzeraoui-artisan.com",
     },
 
     {
@@ -105,7 +121,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
       speciality: "Services",
-      location: "7 Rue Guyot, Caluire-et-Cuire, 69300"
+      location: "7 Rue Guyot, Caluire-et-Cuire, 69300",
+      about: "Loic Reddy, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      website:"loicreddy-artisan.com",
     },
 
     {
@@ -116,7 +134,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
       speciality: "Services",
-      location: "84 Rue Bechevelin, Lyon, 69007"
+      location: "84 Rue Bechevelin, Lyon, 69007",
+      about: "Érica Touré, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      website:"éricatouré-artisan.com",
     },
 
     {
@@ -127,7 +147,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
-      location: "31 Boulevard Pasteur, Clermont-Ferrand, 63000"
+      location: "31 Boulevard Pasteur, Clermont-Ferrand, 63000",
+      about: "Paul Dupont, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      website:"pauldupont-artisan.com",
     },
 
     {
@@ -138,7 +160,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
-      location: "9 Rue Chautard, Aubière, 63170"
+      location: "9 Rue Chautard, Aubière, 63170",
+      about: "Paula Gonzalez, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      website:"paulagonzalez-artisan.com",
     },
 
     {
@@ -149,7 +173,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
-      location: "64 Rue Servient, Lyon, 69003"
+      location: "64 Rue Servient, Lyon, 69003",
+      about: "Francis Ngo, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      website:"francisngo-artisan.com",
     },
 
     {
@@ -160,7 +186,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
-      location: "11 Route de Chevennes, Annecy, 74960"
+      location: "11 Route de Chevennes, Annecy, 74960",
+      about: "Claire Dupuis, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      website:"clairedupuis-artisan.com",
     },
 
     {
@@ -171,7 +199,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
-      location: "4 Rue du Square, Annecy, 74960"
+      location: "4 Rue du Square, Annecy, 74960",
+      about: "Jean Lecomte, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      website:"jeanlecomte-artisan.com",
     },
 
     {
@@ -182,7 +212,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
       speciality: "Alimentation",
-      location: "76 Rue du 4 Septembre, Valence, 26000"
+      location: "76 Rue du 4 Septembre, Valence, 26000",
+      about: "Albert Martin, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      website:"albertmartin-artisan.com",
     },
 
     {
@@ -193,7 +225,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Alimentation",
-      location: "15 Allée Jean Giono, Valence, 26000"
+      location: "15 Allée Jean Giono, Valence, 26000",
+      about: "Sylvie Bernard, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      website:"sylviebernard-artisan.com",
     },
 
     {
@@ -204,7 +238,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-3.png",
       altStars: "3 étoiles jaunes",
       speciality: "Alimentation",
-      location: "57 Rue Pablo Neruda, Clermont-Ferrand, 63000"
+      location: "57 Rue Pablo Neruda, Clermont-Ferrand, 63000",
+      about: "Karim Petit, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      website:"karimpetit-artisan.com",
     },
 
     {
@@ -215,7 +251,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-4.png",
       altStars: "4 étoiles jaunes",
       speciality: "Alimentation",
-      location: "13 Allée des Cyclamens, Clermont-Ferrand, 63000"
+      location: "13 Allée des Cyclamens, Clermont-Ferrand, 63000",
+      about: "Alexandra Moreau, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      website:"alexandramoreau-artisan.com",
     },
 
     {
@@ -226,7 +264,9 @@ export class DataArtisansService {
       pictureStars: "assets/images/etoiles-jaunes-5.png",
       altStars: "5 étoiles jaunes",
       speciality: "Alimentation",
-      location: "7 Rue Chautard, Aubière, 63170"
+      location: "7 Rue Chautard, Aubière, 63170",
+      about: "Thomas Dubois, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      website:"thomasdubois-artisan.com",
     }
   ]
 }
