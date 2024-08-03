@@ -198,15 +198,7 @@
         column-gap: 1.25rem;
     
         img {
-            width: 208px;
-            height: 148.55px;
-        }
-
-        @media #{$laptop-up} {
-            img {
-                width: 250px;
-                height: inherit;
-            }
+            width: 27.08%;
         }
     
         .avis {
@@ -305,5 +297,24 @@
                 top: 1px;
             }
         }
+    }
+}
+
+@media #{$desktop-max} {
+    .picture-artisan {
+        width: 250px !important;
+        height: inherit;
+    }
+}
+
+@media #{$desktop-up} {
+    main {
+        width: 1160px;
+        margin: 0 auto;
+    }
+
+    .picture-artisan {
+        width: 329.98px;
+        height: inherit;
     }
 }
