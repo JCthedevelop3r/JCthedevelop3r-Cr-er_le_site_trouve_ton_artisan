@@ -19,6 +19,7 @@ import { Header2Component } from './components/header-2/header-2.component';
 import { MenuLaptopComponent } from './components/header-2/menu-laptop/menu-laptop.component';
 import { SearchInput2Component } from './components/header-2/search-input-2/search-input-2.component';
 import { Header3Component } from './components/header-3/header-3.component';
+import { Footer2Component } from './components/footer-2/footer-2.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { Header3Component } from './components/header-3/header-3.component';
     Header2Component,
     MenuLaptopComponent,
     SearchInput2Component,
-    Header3Component
+    Header3Component,
+    Footer2Component,
   ],
   imports: [
     BrowserModule,

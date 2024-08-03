@@ -13,6 +13,14 @@
     app-header-3 {
         display: none;
     }
+
+    app-footer {
+        display: block;
+    }
+
+    app-footer-2 {
+        display: none;
+    }
 }
 
 @media #{$laptop-up} {
@@ -26,6 +34,14 @@
 
     app-header-3 {
         display: none;
+    }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
+        display: block;
     }
 }
 
@@ -41,6 +57,14 @@
     app-header-3 {
         display: none;
     }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
+        display: block;
+    }
 }
 
 @media #{$desktop-up} {
@@ -53,6 +77,14 @@
     }
 
     app-header-3 {
+        display: block;
+    }
+
+    app-footer {
+        display: none;
+    }
+
+    app-footer-2 {
         display: block;
     }
 }

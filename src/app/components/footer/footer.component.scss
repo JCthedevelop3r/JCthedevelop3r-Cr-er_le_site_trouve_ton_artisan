@@ -193,3 +193,15 @@ li {
         }
     }
 }
+
+@media #{$desktop-max} {
+    footer {
+        display: none;
+    }
+}
+
+@media #{$desktop-up} {
+    footer {
+        display: none;
+    }
+}
