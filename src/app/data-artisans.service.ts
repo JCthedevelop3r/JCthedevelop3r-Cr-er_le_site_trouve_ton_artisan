@@ -31,7 +31,7 @@ export class DataArtisansService {
       altStars: "4 étoiles jaunes",
       speciality: "Bâtiment",
       location: "103 Rue de la Vaillance, Clermont-Ferrand, 63100",
-      about: "Jena Douglas, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      about: "Jena Douglas, experte en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, Jena a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
       website:"jeandouglas-artisan.com",
     },
 
@@ -44,7 +44,7 @@ export class DataArtisansService {
       altStars: "5 étoiles jaunes",
       speciality: "Bâtiment",
       location: "47 Rue du Cheval, Clermont-Ferrand, 63100",
-      about: "Cédric Thomas, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      about: "Cédric Thomas, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, Cédric a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
       website:"cédricthomas-artisan.com",
     },
 
@@ -57,7 +57,7 @@ export class DataArtisansService {
       altStars: "5 étoiles jaunes",
       speciality: "Bâtiment",
       location: "18 Rue Fantin Latour, Grenoble, 38000",
-      about: "Christine Lacraie, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      about: "Christine Lacraie, experte en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, Christine a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
       website:"christinelacraie-artisan.com",
     },
 
@@ -70,7 +70,7 @@ export class DataArtisansService {
       altStars: "4 étoiles jaunes",
       speciality: "Bâtiment",
       location: "19 Rue Sisteron, Seyssinet-Pariset, 38170",
-      about: "Quentin Lejeune, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, John a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
+      about: "Quentin Lejeune, expert en bâtiment, a suivi une formation approfondie dans l'ingénierie de construction avant de se lancer dans une carrière enrichissante. Au fil des années, Quentin a mené à bien plusieurs projets remarquables, incluant la rénovation de monuments historiques et la construction de résidences modernes. Sa compétence et son dévouement lui ont valu une solide réputation dans le domaine.",
       website:"quentinlejeune-artisan.com",
     },
 
@@ -96,7 +96,7 @@ export class DataArtisansService {
       altStars: "3 étoiles jaunes",
       speciality: "Services",
       location: "5 Rue Jean Zay, Lyon, 69009",
-      about: "Fredéric Rameur, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      about: "Fredéric Rameur, spécialisé dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Il a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font de lui une référence dans le secteur.",
       website:"fredéricrameur-artisan.com",
     },
 
@@ -122,7 +122,7 @@ export class DataArtisansService {
       altStars: "4 étoiles jaunes",
       speciality: "Services",
       location: "7 Rue Guyot, Caluire-et-Cuire, 69300",
-      about: "Loic Reddy, spécialisée dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Elle a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font d'elle une référence dans le secteur.",
+      about: "Loic Reddy, spécialisé dans les services, a suivi une formation rigoureuse en gestion des services avant de se distinguer dans sa carrière. Il a dirigé plusieurs initiatives clés, y compris l'optimisation de services pour de grandes entreprises et la mise en œuvre de solutions innovantes. Son engagement et son expertise font de lui une référence dans le secteur.",
       website:"loicreddy-artisan.com",
     },
 
@@ -161,7 +161,7 @@ export class DataArtisansService {
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
       location: "9 Rue Chautard, Aubière, 63170",
-      about: "Paula Gonzalez, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      about: "Paula Gonzalez, experte en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Elle a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
       website:"paulagonzalez-artisan.com",
     },
 
@@ -187,7 +187,7 @@ export class DataArtisansService {
       altStars: "5 étoiles jaunes",
       speciality: "Fabrication",
       location: "11 Route de Chevennes, Annecy, 74960",
-      about: "Claire Dupuis, expert en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Il a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
+      about: "Claire Dupuis, experte en fabrication, a reçu une formation complète en techniques de fabrication avant de se forger une carrière impressionnante. Elle a réalisé plusieurs projets d'envergure, notamment la production de pièces de haute précision pour diverses industries. Son savoir-faire et son innovation lui ont permis de se démarquer dans le domaine.",
       website:"clairedupuis-artisan.com",
     },
 
@@ -226,7 +226,7 @@ export class DataArtisansService {
       altStars: "5 étoiles jaunes",
       speciality: "Alimentation",
       location: "15 Allée Jean Giono, Valence, 26000",
-      about: "Sylvie Bernard, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      about: "Sylvie Bernard, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Elle a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
       website:"sylviebernard-artisan.com",
     },
 
@@ -252,7 +252,7 @@ export class DataArtisansService {
       altStars: "4 étoiles jaunes",
       speciality: "Alimentation",
       location: "13 Allée des Cyclamens, Clermont-Ferrand, 63000",
-      about: "Alexandra Moreau, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Il a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
+      about: "Alexandra Moreau, spécialiste de l'alimentation, a suivi une formation approfondie en sciences alimentaires avant de se distinguer dans sa carrière. Elle a mené plusieurs projets réussis, y compris le développement de nouvelles recettes et l'amélioration des normes de qualité. Sa passion et son expertise en font un leader dans le secteur.",
       website:"alexandramoreau-artisan.com",
     },
 
