@@ -36,7 +36,7 @@ export class SearchInputComponent implements OnInit {
       this.filteredArtisans = this.artisans.filter(artisan =>
         artisan.identity.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
         artisan.speciality.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-        artisan.location.toLowerCase().includes(this.searchQuery.toLowerCase())
+        artisan.town.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     } else {
       this.filteredArtisans = [];
