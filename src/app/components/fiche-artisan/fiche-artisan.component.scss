@@ -159,7 +159,17 @@
     .lien {
         display: flex;
         align-items: center;
-    
+
+        .colon {
+            font-family: 'Graphik', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $tta-blue;
+            position: relative;
+            top: 0px;
+            padding: 0 .1rem;
+        }
+
         div {
             a {
                 text-decoration: none;
@@ -329,6 +339,16 @@
     .lien {
         display: flex;
         align-items: center;
+
+        .colon {
+            font-family: 'Graphik', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $tta-blue;
+            position: relative;
+            top: 0px;
+            padding: 0 .1rem;
+        }
     
         div {
             a {

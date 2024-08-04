@@ -37,9 +37,7 @@
     <section class="a-propos">
       <h2>À propos</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
+        {{ artisan.about }}
       </p>
     </section>
     <div class="form-container">
@@ -57,8 +55,11 @@
     <div class="website">
       <h2>Site web</h2>
       <div class="lien">
-        <h3>Lien :</h3>
-        <div><a href="">johndoe-artisan.com</a></div>
+        <h3>Lien</h3>
+        <div class="colon">:</div>
+        <div>
+          <a routerLink="">{{ artisan.website }}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -92,16 +93,21 @@
         <div class="localisation">
           <h3>Localisation</h3>
           <div class="colon">:</div>
-          <address>{{ artisan.location }}</address>
+          <address>
+            <a
+              [href]="artisan.maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ artisan.location }}</a
+            >
+          </address>
         </div>
       </div>
     </div>
     <section class="a-propos">
       <h2>À propos</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-        porttitor, urna consequat porta ornare, ante felis rhoncus nisl, sit
-        amet cursus tortor mi tempus dolor.
+        {{ artisan.about }}
       </p>
     </section>
     <div class="form-container">
@@ -119,8 +125,11 @@
     <div class="website">
       <h2>Site web</h2>
       <div class="lien">
-        <h3>Lien :</h3>
-        <div><a href="">johndoe-artisan.com</a></div>
+        <h3>Lien</h3>
+        <div class="colon">:</div>
+        <div>
+          <a routerLink="">{{ artisan.website }}</a>
+        </div>
       </div>
     </div>
   </div>

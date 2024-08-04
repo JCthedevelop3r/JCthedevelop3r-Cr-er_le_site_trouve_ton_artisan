@@ -20,7 +20,11 @@
       <div class="localisation">
         <h3>Localisation</h3>
         <div class="colon">:</div>
-        <address>{{ location }}</address>
+        <address>
+          <a [href]="maps" target="_blank" rel="noopener noreferrer">{{
+            location
+          }}</a>
+        </address>
       </div>
     </div>
   </ng-container>
@@ -44,7 +48,11 @@
       <div class="localisation">
         <h4>Localisation</h4>
         <div class="colon">:</div>
-        <address>{{ location }}</address>
+        <address>
+          <a [href]="maps" target="_blank" rel="noopener noreferrer">{{
+            location
+          }}</a>
+        </address>
       </div>
     </div>
   </ng-template>
