@@ -16,24 +16,26 @@
           id="magnifying-glass"
         />
       </button>
-      <div>
-        <div *ngIf="searchQuery.trim()">
-          <ul *ngIf="filteredArtisans.length">
-            <li *ngFor="let artisan of filteredArtisans">
-              <span (click)="goToFicheArtisan(artisan.id)">{{
+      <div class="artisan-list-container">
+        <div *ngIf="searchQuery.trim()" class="content-container">
+          <ul *ngIf="filteredArtisans.length" class="artisan-list p-0 m-0">
+            <li *ngFor="let artisan of filteredArtisans" class="artisan">
+              <span (click)="goToFicheArtisan(artisan.id)" class="identity">{{
                 artisan.identity
               }}</span>
               -
-              <span (click)="goToFicheArtisan(artisan.id)">{{
+              <span (click)="goToFicheArtisan(artisan.id)" class="speciality">{{
                 artisan.speciality
               }}</span>
               -
-              <span (click)="goToFicheArtisan(artisan.id)">{{
+              <span (click)="goToFicheArtisan(artisan.id)" class="location">{{
                 artisan.location
               }}</span>
             </li>
           </ul>
-          <p *ngIf="!filteredArtisans.length">Aucun artisan trouvé.</p>
+          <p *ngIf="!filteredArtisans.length" class="artisan-not-found">
+            Aucun artisan trouvé.
+          </p>
         </div>
       </div>
     </form>
