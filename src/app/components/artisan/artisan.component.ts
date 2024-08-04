@@ -14,6 +14,7 @@ export class ArtisanComponent implements OnInit {
   @Input() altStars: string = '';
   @Input() speciality: string = '';
   @Input() location: string = '';
+  @Input() maps: string ='';
   @Input() artisanId!: number;
 
   isListPage: boolean = false;

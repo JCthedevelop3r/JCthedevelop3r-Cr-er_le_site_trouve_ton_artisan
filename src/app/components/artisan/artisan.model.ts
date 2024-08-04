@@ -7,6 +7,7 @@ export interface Artisan {
     altStars: string,
     speciality: string,
     location: string
+    maps: string,
     about: string,
     website: string,
 }

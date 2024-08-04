@@ -93,7 +93,14 @@
         <div class="localisation">
           <h3>Localisation</h3>
           <div class="colon">:</div>
-          <address>{{ artisan.location }}</address>
+          <address>
+            <a
+              [href]="artisan.maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ artisan.location }}</a
+            >
+          </address>
         </div>
       </div>
     </div>
