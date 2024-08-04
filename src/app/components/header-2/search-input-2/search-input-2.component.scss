@@ -42,6 +42,35 @@
                         top: 1px;
                     }
                 }
+
+                .artisan-list-container {
+                    position: relative;
+    
+                    .content-container {
+                        .artisan-list {
+                            border: solid 1px $tta-blue;
+                            border-radius: 1rem;
+                            background-color: #fff;
+                            list-style: none;
+    
+                            .artisan {
+                                font-family: "Graphik", sans-serif;
+                                padding: .2rem 1.5rem;
+                                margin: .1rem;
+                                border-radius: 50px;
+                                font-weight: 100;
+                            }
+                        }
+    
+                        .artisan-not-found {
+                            background-color: #fff;
+                            padding: 1rem;
+                            margin: 0;
+                            border: solid 1px #00497c;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
             }
 
             @media #{$desktop-up} {
@@ -62,6 +91,35 @@
                         position: relative;
                         top: 1px;
                         right: 3px;
+                    }
+                }
+
+                .artisan-list-container {
+                    position: relative;
+    
+                    .content-container {
+                        .artisan-list {
+                            border: solid 1px $tta-blue;
+                            border-radius: 1rem;
+                            background-color: #fff;
+                            list-style: none;
+    
+                            .artisan {
+                                font-family: "Graphik", sans-serif;
+                                padding: .2rem 1.5rem;
+                                margin: .1rem;
+                                border-radius: 50px;
+                                font-weight: 100;
+                            }
+                        }
+    
+                        .artisan-not-found {
+                            background-color: #fff;
+                            padding: 1rem;
+                            margin: 0;
+                            border: solid 1px #00497c;
+                            border-radius: 1rem;
+                        }
                     }
                 }
             }

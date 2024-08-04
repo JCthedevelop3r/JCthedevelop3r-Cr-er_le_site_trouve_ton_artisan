@@ -1,7 +1,6 @@
 @import '../../../sass-lib/lib.scss';
 
 .search-input-container {
-    //display: none;
     height: 70px;
     padding: .75rem 1.25rem 1rem;
     box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
@@ -42,6 +41,35 @@
                     height: 12px;
                     position: relative;
                     top: 1px;
+                }
+            }
+
+            .artisan-list-container {
+                position: relative;
+
+                .content-container {
+                    .artisan-list {
+                        border: solid 1px $tta-blue;
+                        border-radius: 1rem;
+                        background-color: #fff;
+                        list-style: none;
+
+                        .artisan {
+                            font-family: "Graphik", sans-serif;
+                            padding: .2rem 1.5rem;
+                            margin: .1rem;
+                            border-radius: 50px;
+                            font-weight: 100;
+                        }
+                    }
+
+                    .artisan-not-found {
+                        background-color: #fff;
+                        padding: 1rem;
+                        margin: 0;
+                        border: solid 1px #00497c;
+                        border-radius: 1rem;
+                    }
                 }
             }
         }

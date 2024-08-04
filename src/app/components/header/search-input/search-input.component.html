@@ -1,7 +1,14 @@
-<div class="search-input-container">
+<div *ngIf="isVisible" class="search-input-container">
   <div class="form-container">
     <form action="" class="search-input-form">
-      <input type="text" class="search-input" placeholder="Rechercher" />
+      <input
+        type="text"
+        class="search-input"
+        [(ngModel)]="searchQuery"
+        name="search-input"
+        (input)="onSearchInputChange()"
+        placeholder="Rechercher des artisans..."
+      />
       <button class="btn-magnifying-glass">
         <img
           src="assets/images/loupe-bleue.png"
@@ -9,6 +16,28 @@
           id="magnifying-glass"
         />
       </button>
+      <div class="artisan-list-container">
+        <div *ngIf="searchQuery.trim()" class="content-container">
+          <ul *ngIf="filteredArtisans.length" class="artisan-list p-0 m-0">
+            <li *ngFor="let artisan of filteredArtisans" class="artisan">
+              <span (click)="goToFicheArtisan(artisan.id)" class="identity">{{
+                artisan.identity
+              }}</span>
+              -
+              <span (click)="goToFicheArtisan(artisan.id)" class="speciality">{{
+                artisan.speciality
+              }}</span>
+              -
+              <span (click)="goToFicheArtisan(artisan.id)" class="location">{{
+                artisan.location
+              }}</span>
+            </li>
+          </ul>
+          <p *ngIf="!filteredArtisans.length" class="artisan-not-found">
+            Aucun artisan trouvé.
+          </p>
+        </div>
+      </div>
     </form>
   </div>
 </div>

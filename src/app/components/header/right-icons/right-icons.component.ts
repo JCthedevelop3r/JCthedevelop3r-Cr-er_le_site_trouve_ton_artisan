@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { SearchVisibilityService } from '../../../search-visibility.service';
 
 @Component({
   selector: 'app-right-icons',
@@ -8,7 +9,7 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class RightIconsComponent implements OnInit {
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private visibilityService: SearchVisibilityService) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -46,6 +47,10 @@ export class RightIconsComponent implements OnInit {
   }
 
   searchToggler(): void {
+    this.visibilityService.toggleSearch();
+  }
+
+  /*searchToggler(): void {
     if (isPlatformBrowser(this.platformId)) {
       const searchInput = document.getElementById('app-search-input') as HTMLElement;
 
@@ -55,5 +60,5 @@ export class RightIconsComponent implements OnInit {
         searchInput.style.display = "none";
       }
     }
-  }
+  }*/
 }
