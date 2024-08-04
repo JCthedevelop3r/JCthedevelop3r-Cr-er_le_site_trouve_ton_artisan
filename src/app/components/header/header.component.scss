@@ -6,7 +6,7 @@ header {
     box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .0793474);
 
     #app-search-input {
-        display: none;
+        display: block !important;
     }
 
     .navbar {
