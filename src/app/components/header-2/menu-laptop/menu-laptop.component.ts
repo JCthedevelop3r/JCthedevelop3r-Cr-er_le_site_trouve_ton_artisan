@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './menu-laptop.component.scss'
 })
 export class MenuLaptopComponent {
-
 }
