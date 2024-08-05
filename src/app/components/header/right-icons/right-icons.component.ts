@@ -10,7 +10,7 @@ export class RightIconsComponent {
 
   constructor(private visibilityService: SearchVisibilityService) { }
   
-  @Input() isMenuOpen = false; // Nouvelle variable pour suivre l'état du menu
+  @Input() isMenuOpen = false;
   @Output() toggleMenu = new EventEmitter<void>();
   @Output() closeMenu = new EventEmitter<void>();
 

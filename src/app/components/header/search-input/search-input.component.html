@@ -1,4 +1,9 @@
-<div *ngIf="isVisible" class="search-input-container">
+<div
+  *ngIf="isVisible"
+  class="search-input-container"
+  appClickOutside
+  (appClickOutside)="onClickOutside()"
+>
   <div class="form-container">
     <form action="" class="search-input-form">
       <input

@@ -21,6 +21,7 @@ import { SearchInput2Component } from './components/header-2/search-input-2/sear
 import { Header3Component } from './components/header-3/header-3.component';
 import { Footer2Component } from './components/footer-2/footer-2.component';
 import { FormsModule } from '@angular/forms';
+import { ClickOutsideDirective } from './click-outside.directive';
 
 @NgModule({
   declarations: [
@@ -42,12 +43,14 @@ import { FormsModule } from '@angular/forms';
     SearchInput2Component,
     Header3Component,
     Footer2Component,
+    ClickOutsideDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
+  exports: [ClickOutsideDirective],
   providers: [
     provideClientHydration()
   ],

@@ -16,7 +16,12 @@
           id="magnifying-glass"
         />
       </button>
-      <div class="artisan-list-container">
+      <div
+        class="artisan-list-container"
+        *ngIf="isListVisible"
+        appClickOutside
+        (appClickOutside)="onClickOutside()"
+      >
         <div *ngIf="searchQuery.trim()" class="content-container">
           <ul *ngIf="filteredArtisans.length" class="artisan-list p-0 m-0">
             <li *ngFor="let artisan of filteredArtisans" class="artisan">
