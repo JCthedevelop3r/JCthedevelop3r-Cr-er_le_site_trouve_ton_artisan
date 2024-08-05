@@ -162,46 +162,45 @@ li {
             }
         }
     }
+}
 
-    .social-media-container {
-        width: 100vw;
-        background-color: #fff;
-        position: relative;
-        right: 1.875rem;
-        color: $tta-dark-blue;
-        padding: 1.25rem 0;
+.social-media-container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    color: $tta-dark-blue;
+    padding: 1.25rem 0;
 
-        .logos-container {
+    .logos-container {
+        display: flex;
+        justify-content: center;
+
+        .logo-container {
+            width: 40px;
+            height: 30px;
             display: flex;
-            justify-content: center;
+            align-items: center;
+                
+                .youtube-img {
+                    width: 28px;
+                }
 
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .instagram-x-container {
+            display: flex;
+            position: relative;
+            left: 8px;
+            
             .logo-container {
                 width: 40px;
                 height: 30px;
                 display: flex;
                 align-items: center;
-                    
-                    .youtube-img {
-                        width: 28px;
-                    }
-
-                img {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-
-            .instagram-x-container {
-                display: flex;
-                position: relative;
-                left: 8px;
-                
-                .logo-container {
-                    width: 40px;
-                    height: 30px;
-                    display: flex;
-                    align-items: center;
-                }
             }
         }
     }
