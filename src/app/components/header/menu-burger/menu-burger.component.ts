@@ -1,8 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-menu-burger',
   templateUrl: './menu-burger.component.html',
-  styleUrl: './menu-burger.component.scss'
+  styleUrls: ['./menu-burger.component.scss']
 })
-export class MenuBurgerComponent {}
+export class MenuBurgerComponent {
+  @Output() closeMenu = new EventEmitter<void>();
+
+  onLinkClick() {
+    setTimeout(() => {
+      this.closeMenu.emit();
+    }, 300);
+  }
+}

@@ -4,20 +4,30 @@
       <div class="content-container">
         <div class="logo-icons-container">
           <div class="logo-container">
-            <a class="navbar-brand" routerLink=""
-              ><img
+            <a class="navbar-brand" routerLink="">
+              <img
                 src="assets/images/logo-cropped.png"
                 alt="Logo du site Trouve ton artisan"
                 class="logo"
-            /></a>
+              />
+            </a>
           </div>
-          <app-right-icons id="app-right-icons" />
+          <app-right-icons
+            [isMenuOpen]="isMenuOpen"
+            (toggleMenu)="toggleMenu()"
+            (closeMenu)="closeMenu()"
+            id="app-right-icons"
+          ></app-right-icons>
         </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <app-menu-burger />
+      <div
+        class="collapse navbar-collapse"
+        [ngClass]="{ show: isMenuOpen }"
+        id="navbarSupportedContent"
+      >
+        <app-menu-burger (closeMenu)="closeMenu()"></app-menu-burger>
       </div>
     </div>
   </nav>
-  <app-search-input id="app-search-input" />
+  <app-search-input id="app-search-input"></app-search-input>
 </header>
