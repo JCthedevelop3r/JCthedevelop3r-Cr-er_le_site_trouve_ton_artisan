@@ -2,10 +2,36 @@
 
 .message-container {
   display: flex;
-  align-items: center;
-  background-color: $tta-transparent-green;
-  border: solid 1px $tta-green;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(130, 184, 100, 0.2);
+  border: solid 1px #82b864;
   border-radius: 10px;
   padding: 10px 20px;
   margin-bottom: 3rem;
+  position: relative;
+  font-family: "Graphik";
+  font-weight: 100;
+
+  .close-message {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .btn-fermer {
+      font-family: "Graphik";
+      border: none;
+      background: transparent;
+      font-weight: 100;
+      align-self: flex-end;
+      width: auto;
+      margin: 0.5rem;
+      color: $tta-green;
+      transition: color 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: $tta-dark-blue;
+      }
+    }
+  }
 }

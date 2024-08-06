@@ -20,7 +20,7 @@ import { MenuLaptopComponent } from './components/header-2/menu-laptop/menu-lapt
 import { SearchInput2Component } from './components/header-2/search-input-2/search-input-2.component';
 import { Header3Component } from './components/header-3/header-3.component';
 import { Footer2Component } from './components/footer-2/footer-2.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClickOutsideDirective } from './click-outside.directive';
 import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales/mentions-legales.component';
 import { DonneesPersonnellesComponent } from './components/mentions-legales/donnees-personnelles/donnees-personnelles.component';
@@ -64,7 +64,8 @@ import { MessageSentComponent } from './components/fiche-artisan/message-sent/me
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ClickOutsideDirective],
   providers: [
