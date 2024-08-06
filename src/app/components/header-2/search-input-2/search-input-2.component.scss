@@ -1,128 +1,141 @@
-@import '../../../sass-lib/lib.scss';
-@import '../../../sass-lib/responsive.scss';
+@import "../../../sass-lib/lib.scss";
+@import "../../../sass-lib/responsive.scss";
 
 .search-input-container {
-    width: 273px;
+  width: 273px;
+  height: 39px;
+  background-color: #fff;
+  padding-top: 15px;
+
+  .form-container {
+    @extend .full-w;
     height: 39px;
-    background-color: #fff;
-    padding-top: 15px;
 
-    .form-container {
-        @extend .full-w;
-        height: 39px;
+    .search-input-form {
+      @extend .full-wh;
 
-        .search-input-form {
-            @extend .full-wh;
+      .search-input {
+        @extend .full-wh;
+        border-bottom: solid 1px $tta-light-blue;
+        border-top: none;
+        border-right: solid 1px $tta-light-blue;
+        border-left: none;
+        padding: 0.3rem 1rem;
+      }
 
-            .search-input {
-                @extend .full-wh;
-                border-bottom: solid 1px $tta-light-blue;
-                border-top: none;
-                border-right: solid 1px $tta-light-blue;
-                border-left: none;
-                padding: .3rem 1rem;
-            }
+      @media #{$desktop-max} {
+        .btn-magnifying-glass {
+          width: 32px;
+          height: 32px;
+          border: none;
+          border-radius: 50%;
+          background-color: transparent;
+          padding: 0;
+          position: absolute;
+          right: 4vw;
 
-            @media #{$desktop-max} {
-                .btn-magnifying-glass {
-                    width: 32px;
-                    height: 32px;
-                    border: none;
-                    border-radius: 50%;
-                    background-color: transparent;
-                    padding: 0;
-                    position: absolute;
-                    right: 4vw;
-    
-    
-                    #magnifying-glass {
-                        width: 12px;
-                        height: 12px;
-                        position: relative;
-                        top: 1px;
-                    }
-                }
-
-                .artisan-list-container {
-                    position: relative;
-    
-                    .content-container {
-                        .artisan-list {
-                            border: solid 1px $tta-blue;
-                            border-radius: 1rem;
-                            background-color: #fff;
-                            list-style: none;
-    
-                            .artisan {
-                                font-family: "Graphik", sans-serif;
-                                padding: .2rem 1.5rem;
-                                margin: .1rem;
-                                border-radius: 50px;
-                                font-weight: 100;
-                            }
-                        }
-    
-                        .artisan-not-found {
-                            background-color: #fff;
-                            padding: 1rem;
-                            margin: 0;
-                            border: solid 1px #00497c;
-                            border-radius: 1rem;
-                        }
-                    }
-                }
-            }
-
-            @media #{$desktop-up} {
-                .btn-magnifying-glass {
-                    width: 32px;
-                    height: 32px;
-                    border: none;
-                    border-radius: 50%;
-                    background-color: transparent;
-                    padding: 0;
-                    position: absolute;
-                    right: 38px;
-    
-    
-                    #magnifying-glass {
-                        width: 12px;
-                        height: 12px;
-                        position: relative;
-                        top: 1px;
-                        right: 3px;
-                    }
-                }
-
-                .artisan-list-container {
-                    position: relative;
-    
-                    .content-container {
-                        .artisan-list {
-                            border: solid 1px $tta-blue;
-                            border-radius: 1rem;
-                            background-color: #fff;
-                            list-style: none;
-    
-                            .artisan {
-                                font-family: "Graphik", sans-serif;
-                                padding: .2rem 1.5rem;
-                                margin: .1rem;
-                                border-radius: 50px;
-                                font-weight: 100;
-                            }
-                        }
-    
-                        .artisan-not-found {
-                            background-color: #fff;
-                            padding: 1rem;
-                            margin: 0;
-                            border: solid 1px #00497c;
-                            border-radius: 1rem;
-                        }
-                    }
-                }
-            }
+          #magnifying-glass {
+            width: 12px;
+            height: 12px;
+            position: relative;
+            top: 1px;
+          }
         }
+
+        .artisan-list-container {
+          position: relative;
+
+          .content-container {
+            .artisan-list {
+              border: solid 1px $tta-blue;
+              border-radius: 1rem;
+              background-color: #fff;
+              list-style: none;
+
+              .artisan {
+                font-family: "Graphik", sans-serif;
+                padding: 0.2rem 1.5rem;
+                margin: 0.1rem;
+                border-radius: 50px;
+                font-weight: 100;
+                transition: background-color 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                  background-color: $tta-blue;
+                  color: #fff !important;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .artisan-not-found {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 0;
+            border: solid 1px #00497c;
+            border-radius: 1rem;
+          }
+        }
+      }
     }
+
+    @media #{$desktop-up} {
+      .btn-magnifying-glass {
+        width: 32px;
+        height: 32px;
+        border: none;
+        border-radius: 50%;
+        background-color: transparent;
+        padding: 0;
+        position: absolute;
+        right: 38px;
+
+        #magnifying-glass {
+          width: 12px;
+          height: 12px;
+          position: relative;
+          top: 1px;
+          right: 3px;
+        }
+      }
+
+      .artisan-list-container {
+        position: relative;
+        z-index: 1;
+
+        .content-container {
+          .artisan-list {
+            border: solid 1px $tta-blue;
+            border-radius: 1rem;
+            background-color: #fff;
+            list-style: none;
+
+            .artisan {
+              font-family: "Graphik", sans-serif;
+              padding: 0.2rem 1.5rem;
+              margin: 0.1rem;
+              border-radius: 50px;
+              font-weight: 100;
+              transition: background-color 0.3s ease, color 0.3s ease;
+
+              &:hover {
+                background-color: $tta-blue;
+                color: #fff !important;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .artisan-not-found {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 0;
+            border: solid 1px #00497c;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+  }
 }

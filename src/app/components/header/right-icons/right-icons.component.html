@@ -19,11 +19,17 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <div class="toggler-icon-container">
+      <div
+        class="toggler-icon-container"
+        [ngClass]="{ 'fade-out': isMenuOpen }"
+      >
         <span class="toggler-icon"></span>
         <span class="action-text">Menu</span>
       </div>
-      <span class="blue-cross-icon"></span>
+      <span
+        class="blue-cross-icon"
+        [ngClass]="{ 'fade-in': isMenuOpen }"
+      ></span>
     </button>
   </div>
 </div>

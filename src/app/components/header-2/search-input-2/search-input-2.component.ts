@@ -14,10 +14,12 @@ export class SearchInput2Component implements OnInit {
   artisans: Artisan[] = [];
   filteredArtisans: Artisan[] = [];
   searchQuery = '';
+  isListVisible = false; // Initialement, la liste n'est pas visible
 
   constructor(
     private router: Router,
     private dataArtisansService: DataArtisansService,
+    private visibilityService : SearchVisibilityService
   ) {}
 
   ngOnInit(): void {
@@ -32,8 +34,10 @@ export class SearchInput2Component implements OnInit {
         artisan.speciality.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
         artisan.town.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
+      this.isListVisible = true; // Afficher la liste des artisans lorsqu'il y a une requête de recherche
     } else {
       this.filteredArtisans = [];
+      this.isListVisible = false; // Cacher la liste des artisans si la requête est vide
     }
   }
 
@@ -41,5 +45,10 @@ export class SearchInput2Component implements OnInit {
     this.searchQuery = ''; // Réinitialiser la recherche
     this.filteredArtisans = []; // Réinitialiser la liste filtrée
     this.router.navigate(['/fiche-artisan', id]);
+  }
+
+  onClickOutside(): void {
+    console.log('Click outside detected in app-search-input-2');
+    this.isListVisible = false; // Cacher la liste des artisans lorsque l'utilisateur clique en dehors
   }
 }

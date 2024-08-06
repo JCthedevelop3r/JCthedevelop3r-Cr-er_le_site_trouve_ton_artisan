@@ -4,12 +4,24 @@ import { HomeComponent } from './components/home/home.component';
 import { ListeArtisansComponent } from './components/liste-artisans/liste-artisans.component';
 import { FicheArtisanComponent } from './components/fiche-artisan/fiche-artisan.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
+import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales/mentions-legales.component';
+import { DonneesPersonnellesComponent } from './components/mentions-legales/donnees-personnelles/donnees-personnelles.component';
+import { AccessibiliteComponent } from './components/mentions-legales/accessibilite/accessibilite.component';
+import { PresseComponent } from './components/mentions-legales/presse/presse.component';
+import { MarchesPublicsComponent } from './components/mentions-legales/marches-publics/marches-publics.component';
+import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
+import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
 
 const routes: Routes = [
-  //Plus tard il faudra diriger l'utilisateur vers l'id fiche-artisan qui correspond
-  // à la spécialité de l'artisan(bâtiment, services, fabrication, alimentation).
   { path: 'fiche-artisan/:id', component: FicheArtisanComponent },
   { path: 'liste-artisans/:speciality', component: ListeArtisansComponent },
+  { path: 'mentions-legales', component: MentionsLegalesComponent },
+  { path: 'donnees-personnelles', component: DonneesPersonnellesComponent },
+  { path: 'accessibilite', component: AccessibiliteComponent },
+  { path: 'presse', component: PresseComponent },
+  { path: 'marches-publics', component: MarchesPublicsComponent },
+  { path: 'venir-a-la-region', component: VenirALaRegionComponent },
+  { path: 'contacts', component: ContactsComponent },
   { path: 'accueil', component: HomeComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
   { path: '**', component: NotFoundPageComponent }

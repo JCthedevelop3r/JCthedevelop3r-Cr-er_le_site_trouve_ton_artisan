@@ -18,7 +18,7 @@ export class SearchInputComponent implements OnInit {
   constructor(
     private router: Router,
     private dataArtisansService: DataArtisansService,
-    private visibilityService: SearchVisibilityService
+    private visibilityService: SearchVisibilityService,
   ) {}
 
   ngOnInit(): void {
@@ -27,6 +27,7 @@ export class SearchInputComponent implements OnInit {
 
     // Souscrire aux changements de visibilité
     this.visibilityService.visibility$.subscribe(isVisible => {
+      console.log('Visibility changed:', isVisible);
       this.isVisible = isVisible;
     });
   }
@@ -48,5 +49,10 @@ export class SearchInputComponent implements OnInit {
     this.filteredArtisans = []; // Réinitialiser la liste filtrée
     this.visibilityService.hideSearch(); // Masquer le composant
     this.router.navigate(['/fiche-artisan', id]);
+  }
+
+  onClickOutside(): void {
+    console.log('Click outside detected, hiding search input');
+    this.visibilityService.hideSearch();
   }
 }

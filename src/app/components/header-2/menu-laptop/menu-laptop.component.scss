@@ -1,38 +1,39 @@
+@import '../../../sass-lib/lib.scss';
+
 .nav-link {
     padding-top: 5px;
     padding-bottom: 0;
     height: 65.19px;
 }
 
-.b-link {
+.batiment, .services, .fabrication, .alimentation {
+    position: relative;
+}
+
+.nav-link {
     padding-right: 16px !important;
     padding-left: 16px !important;
+
+    &::before {
+        position: absolute;
+        right: 32px;
+        bottom: 28px;
+        left: 16px;
+        height: 2px;
+        width: 100%;
+        content: "";
+        background-color: $tta-dark-blue;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
+
+    &:hover::before,
+    &:focus::before {
+        opacity: 1;
+    }
 }
 
-.s-link {
-    padding: 5px 16px 0 16px !important;
-}
-
-.f-link {
-    padding: 5px 16px 0 16px !important;
-}
-
-.a-link {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-}
-/*.batiment {
-    padding-right: 16px;
-}
-
-.services {
-    padding: 0 16px;
-}
-
-.fabrication {
-    padding: 0 16px;
-}
-
-.alimentation {
-    padding-left: 16px;
-}*/
+.batiment .b-link::before { width: 63.59px; }
+.services .s-link::before { width: 59.1px; }
+.fabrication .f-link::before { width: 80px; }
+.alimentation .a-link::before { width: 92px; }

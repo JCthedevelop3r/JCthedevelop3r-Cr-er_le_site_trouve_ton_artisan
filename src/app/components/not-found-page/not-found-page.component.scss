@@ -1,68 +1,73 @@
-@import '../../sass-lib/lib.scss';
-@import '../../sass-lib/responsive.scss';
+@import "../../sass-lib/lib.scss";
+@import "../../sass-lib/responsive.scss";
 
 main {
-    padding: 1.875rem 1.875rem 4rem 1.875rem;
-    display: flex;
-    flex-direction: column;
+  padding: 1.875rem 1.875rem 4rem 1.875rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .blue-line {
-    width: 2rem;
-    height: .33rem;
-    background-color: $tta-light-blue;
-    margin: 3rem 0 1.5rem 0;
+  width: 2rem;
+  height: 0.33rem;
+  background-color: $tta-light-blue;
+  margin: 3rem 0 1.5rem 0;
 }
 
 h1 {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .not-found-image {
-    padding: 1.5rem 0;
-    width: 130px;
-    align-self: center;
+  padding: 1.5rem 0;
+  width: 130px;
+  align-self: center;
 }
 
 @media #{$tablet-up} {
-    .not-found-image {
-        padding: 1.5rem 0;
-        width: 180px;
-    }
+  .not-found-image {
+    padding: 1.5rem 0;
+    width: 180px;
+  }
 }
 
 .btn-home {
-    border: none;
-    background-color: $tta-light-blue;
-    border-radius: 30px;
+  border: none;
+  background-color: $tta-light-blue;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 304px;
+  transition: background-color ease 0.3s;
+
+  &:hover {
+    background-color: $tta-blue !important;
+  }
+
+  .home-link {
+    text-decoration: none;
+    height: 36px;
+    color: #fff !important;
     display: flex;
     align-items: center;
-    max-width: 304px;
+    padding: 0.5rem 1.7rem 0.5rem 1.8rem;
 
-    .home-link {
-        text-decoration: none;
-        height: 36px;
-        color: #fff !important;
-        display: flex;
-        align-items: center;
-        padding: .5rem 1.7rem .5rem 1.8rem;
-        
-        .arrow-white-right {
-            height: 36px;
-            width: 31px;
-            padding: 0.3rem 0rem 0.3rem 0.6rem;
-    
-            img {
-                width: 18px;
-                height: 18px;
-            }
-        }
+    .arrow-white-right {
+      height: 36px;
+      width: 31px;
+      padding: 0.3rem 0rem 0.3rem 0.6rem;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
     }
+  }
 }
 
 @media #{$desktop-up} {
-    main {
-        width: 1160px;
-        margin: 0 auto;
-    }
+  main {
+    width: 1160px;
+    margin: 0 auto;
+  }
 }
