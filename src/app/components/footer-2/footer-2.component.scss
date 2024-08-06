@@ -292,10 +292,29 @@ li {
       justify-content: center;
 
       .logo-container {
-        height: 30px;
         width: 40px;
+        height: 30px;
         display: flex;
+        justify-content: center;
         align-items: center;
+        position: relative;
+        outline: none;
+
+        &::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          border: dotted 1px #0074c7;
+          border-radius: 50px;
+          top: 0px;
+          left: 5px;
+          opacity: 0;
+        }
+
+        &:focus::before {
+          opacity: 1;
+        }
 
         .icon {
           width: 20px;
@@ -354,19 +373,6 @@ li {
             center;
           -webkit-mask-size: contain;
           mask-size: contain;
-        }
-      }
-
-      .instagram-x-container {
-        display: flex;
-        position: relative;
-        left: 8px;
-
-        .logo-container {
-          width: 40px;
-          height: 30px;
-          display: flex;
-          align-items: center;
         }
       }
     }
@@ -455,10 +461,29 @@ li {
       justify-content: center;
 
       .logo-container {
-        height: 30px;
         width: 40px;
+        height: 30px;
         display: flex;
+        justify-content: center;
         align-items: center;
+        position: relative;
+        outline: none;
+
+        &::before {
+          content: "";
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          border: dotted 1px #0074c7;
+          border-radius: 50px;
+          top: 0px;
+          left: 5px;
+          opacity: 0;
+        }
+
+        &:focus::before {
+          opacity: 1;
+        }
 
         .icon {
           width: 20px;
@@ -517,19 +542,6 @@ li {
             center;
           -webkit-mask-size: contain;
           mask-size: contain;
-        }
-      }
-
-      .instagram-x-container {
-        display: flex;
-        position: relative;
-        left: 8px;
-
-        .logo-container {
-          width: 40px;
-          height: 30px;
-          display: flex;
-          align-items: center;
         }
       }
     }

@@ -199,8 +199,8 @@ li {
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative; /* Ensure the container is positioned for the pseudo-element */
-      outline: none; /* Remove default outline on focus */
+      position: relative;
+      outline: none;
 
       &::before {
         content: "";
