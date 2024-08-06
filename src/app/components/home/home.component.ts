@@ -12,11 +12,18 @@ import { DataArtisansService } from '../../data-artisans.service';
 export class HomeComponent implements OnInit {
   steps: Step[] = [];
   artisans: Artisan[] = [];
+  selectedArtisans: Artisan[] = [];
 
   constructor(private dataStepsService: DataStepsService, private dataArtisansService: DataArtisansService) { }
 
   ngOnInit() {
     this.steps = this.dataStepsService.dataSteps;
     this.artisans = this.dataArtisansService.dataArtisans;
+    this.filterSelectedArtisans();
+  }
+
+  filterSelectedArtisans() {
+    const selectedNames = ["John Doe", "Paula Gonzalez", "Thomas Dubois"];
+    this.selectedArtisans = this.artisans.filter(artisan => selectedNames.includes(artisan.identity));
   }
 }
