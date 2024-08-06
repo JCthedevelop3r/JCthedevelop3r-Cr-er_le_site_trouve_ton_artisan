@@ -3,34 +3,35 @@ $tta-light-blue: #0074c7;
 $tta-blue: #00497c;
 $tta-dark-blue: #384050;
 $tta-red: #cd2c2e;
-$tta-green:#82b864;
+$tta-green: #82b864;
+$tta-transparent-green: rgba(130, 184, 100, 0.2);
 
 .full-wh {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .full-w {
-    width: 100%;
+  width: 100%;
 }
 
 .full-h {
-    height: 100%;
+  height: 100%;
 }
 
 .btn-effect {
-    &:focus {
-        outline-color: #0074c7;
-        outline-style: dotted !important;
-        outline-width: thin;
-        box-shadow: none;
-    }
-    
-    &:active {
-        background-color: rgba(0, 116, 199, 0.3);
-    }    
+  &:focus {
+    outline-color: #0074c7;
+    outline-style: dotted !important;
+    outline-width: thin;
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: rgba(0, 116, 199, 0.3);
+  }
 }
 
 .no-padding {
-    padding: 0;
+  padding: 0;
 }

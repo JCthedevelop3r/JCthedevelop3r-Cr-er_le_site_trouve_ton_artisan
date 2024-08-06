@@ -29,6 +29,7 @@ import { PresseComponent } from './components/mentions-legales/presse/presse.com
 import { MarchesPublicsComponent } from './components/mentions-legales/marches-publics/marches-publics.component';
 import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
 import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
+import { MessageSentComponent } from './components/fiche-artisan/message-sent/message-sent.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { ContactsComponent } from './components/mentions-legales/contacts/contac
     MarchesPublicsComponent,
     VenirALaRegionComponent,
     ContactsComponent,
+    MessageSentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+@import "../../../sass-lib/lib.scss";
+
+.message-container {
+  display: flex;
+  align-items: center;
+  background-color: $tta-transparent-green;
+  border: solid 1px $tta-green;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 3rem;
+}
