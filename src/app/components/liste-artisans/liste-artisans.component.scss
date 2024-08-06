@@ -1,137 +1,45 @@
-@import '../../sass-lib/lib.scss';
-@import '../../sass-lib/responsive.scss';
+@import "../../sass-lib/lib.scss";
+@import "../../sass-lib/responsive.scss";
 
 main {
-    padding: 1.875rem 1.875rem 4rem 1.875rem;
+  padding: 1.875rem 1.875rem 4rem 1.875rem;
 }
 
 .green-line {
-    width: 2rem;
-    height: .33rem;
-    background-color: $tta-green;
-    margin: 0 0 1.5rem 0;
+  width: 2rem;
+  height: 0.33rem;
+  background-color: $tta-green;
+  margin: 0 0 1.5rem 0;
 }
 
 h1 {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 h2 {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .liste-artisans {
-    list-style-type: none;
-    display: grid;
-
-    img {
-        width: 75vw;
-        margin-bottom: 0.875rem;
-        border: solid 1px $tta-light-blue;
-    }
-
-    h3 {
-        font-size: 1rem;
-    }
-
-    .avis {
-        display: flex;
-        justify-content: flex-start;
-
-        .stars {
-            border: none;
-            margin: 0;
-            height: 17px;
-            width: 93.36px;
-            position: relative;
-            top: 2px;
-        }
-    }
-
-    .specialite {
-        display: flex;
-        align-items: center;
-    }
-
-    .localisation {
-        display: flex;
-    }
-
-    address {
-        margin: 0;
-    }
-
-    .artisan-1 {
-        .localisation {
-            h3 {
-                width: 71%;
-            }
-
-            address {
-                position: relative;
-                top: -1px;
-            }
-        }
-    }
-
-    .artisan-2 {
-        .localisation {
-            h3 {
-                width: 40%;
-            }
-
-            address {
-                position: relative;
-                top: -1px;
-                width: 60%;
-            }
-        }
-    }
-
-    .artisan-3 {
-        .localisation {
-            h3 {
-                width: 40%;
-            }
-
-            address {
-                position: relative;
-                top: -1px;
-                width: 60%;
-            }
-        }
-    }
-
-    .artisan-4 {
-        .localisation {
-            h3 {
-                width: 40%;
-            }
-
-            address {
-                position: relative;
-                top: -1px;
-                width: 60%;
-            }
-        }
-    }
+  list-style-type: none;
+  display: grid;
 }
 
 @media #{$tablet-up} {
-    .liste-artisans {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 4rem;
-    }
+  .liste-artisans {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+  }
 }
 
 @media #{$desktop-up} {
-    main {
-        width: 1160px;
-        margin: 0 auto;
-    }
+  main {
+    width: 1160px;
+    margin: 0 auto;
+  }
 }

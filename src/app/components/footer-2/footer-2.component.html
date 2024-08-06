@@ -3,11 +3,13 @@
     <div class="top-main-container">
       <div class="footer-top">
         <div class="logo-container">
-          <img
-            src="assets/images/logo-blanc.png"
-            alt="Logo du site Trouve ton artisan en blanc"
-            class="logo-white"
-          />
+          <a href="">
+            <img
+              src="assets/images/logo-blanc.png"
+              alt="Logo du site Trouve ton artisan en blanc"
+              class="logo-white"
+            />
+          </a>
         </div>
         <div class="conseil-regional-container">
           <p>
@@ -27,10 +29,16 @@
               />
             </div>
             <address class="p-0 m-0">
-              101 cours Charlemagne<br />
-              CS 20033<br />
-              69269 LYON CEDEX 02<br />
-              France<br />
+              <a
+                href="https://www.google.fr/maps/place/101+Cr+Charlemagne,+69002+Lyon/@45.7403373,4.8165224,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4ebceb7217f5b:0x97dd96361cc92602!8m2!3d45.7403373!4d4.8190973!16s%2Fg%2F11c213z3kc?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                101 cours Charlemagne<br />
+                CS 20033<br />
+                69269 LYON CEDEX 02<br />
+                France<br />
+              </a>
               <p>Ouvert de 8h15 à 17h du lundi au vendredi</p>
             </address>
           </div>
@@ -52,13 +60,17 @@
     <div class="footer-bottom">
       <nav>
         <ul>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Données personnelles</a></li>
-          <li><a href="#">Accessibilité : partiellement conforme</a></li>
-          <li><a href="#">Presse</a></li>
-          <li><a href="#">Marchés publics</a></li>
-          <li><a href="#">Venir à la région</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a routerLink="mentions-legales">Mentions légales</a></li>
+          <li><a routerLink="donnees-personnelles">Données personnelles</a></li>
+          <li>
+            <a routerLink="accessibilite"
+              >Accessibilité : partiellement conforme</a
+            >
+          </li>
+          <li><a routerLink="presse">Presse</a></li>
+          <li><a routerLink="marches-publics">Marchés publics</a></li>
+          <li><a routerLink="venir-a-la-region">Venir à la région</a></li>
+          <li><a routerLink="contacts">Contacts</a></li>
         </ul>
       </nav>
       <div class="cookies-container">
@@ -77,36 +89,20 @@
   <div class="social-media-container">
     <div class="logos-container">
       <div class="facebook-container logo-container">
-        <img
-          src="assets/images/logo-facebook.png"
-          alt="Logo de Facebook"
-          class="facebook-img"
-        />
+        <span class="icon facebook-img"></span>
       </div>
       <div class="linkedin-container logo-container">
-        <img
-          src="assets/images/logo-linkedin.png"
-          alt="Logo de Linkedin"
-          class="linkedin-img"
-        />
+        <span class="icon linkedin-img"></span>
       </div>
       <div class="youtube-container logo-container">
-        <img
-          src="assets/images/logo-youtube.png"
-          alt="Logo de Youtube"
-          class="youtube-img"
-        />
+        <span class="icon youtube-img"></span>
       </div>
       <div class="instagram-x-container">
         <div class="instagram-container logo-container">
-          <img
-            src="assets/images/logo-instagram.png"
-            alt="Logo d'Instagram"
-            class="instagram-img"
-          />
+          <span class="icon instagram-img"></span>
         </div>
         <div class="x-container logo-container">
-          <img src="assets/images/logo-x.png" alt="Logo de X" class="x-img" />
+          <span class="icon x-img"></span>
         </div>
       </div>
     </div>

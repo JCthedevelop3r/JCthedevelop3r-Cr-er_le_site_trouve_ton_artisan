@@ -1,117 +1,124 @@
-@import '../../sass-lib/lib.scss';
-@import '../../sass-lib/responsive.scss';
+@import "../../sass-lib/lib.scss";
+@import "../../sass-lib/responsive.scss";
 
 .identity {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 img {
-    margin-bottom: 0.875rem;
-    width: 208px;
-    height: 148.56px;
-    border: solid 1px $tta-light-blue;
+  margin-bottom: 0.875rem;
+  width: 208px;
+  height: 148.56px;
+  border: solid 1px $tta-light-blue;
 }
 
-h3, h4 {
-    font-size: 1rem;
+h3,
+h4 {
+  font-size: 1rem;
 }
 
 .avis {
-    display: flex;
+  display: flex;
 
-    .colon {
-        font-family: 'Graphik', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 .1rem;
-    }
-    
-    .stars {
-        border: none;
-        margin: 0;
-        height: 17px;
-        width: 93.36px;
-        position: relative;
-        top: 2px;
-        left: 2px;
-    }
+  .colon {
+    font-family: "Graphik", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $tta-blue;
+    position: relative;
+    top: -3px;
+    padding: 0 0.1rem;
+  }
+
+  .stars {
+    border: none;
+    margin: 0;
+    height: 17px;
+    width: 93.36px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
 }
 
 .specialite {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    .colon {
-        font-family: 'Graphik', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -1px;
-        padding: 0 .1rem;
-    }
-    
-    p {
-        height: 19.19px;
-        padding-bottom: 23px;
-        position: relative;
-        left: 2px;
-    }
+  .colon {
+    font-family: "Graphik", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $tta-blue;
+    position: relative;
+    top: -1px;
+    padding: 0 0.1rem;
+  }
+
+  p {
+    height: 19.19px;
+    padding-bottom: 23px;
+    position: relative;
+    left: 2px;
+  }
 }
 
 .localisation {
-    display: flex;
+  display: flex;
 
-    .colon {
-        font-family: 'Graphik', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 .1rem;
-    }
+  .colon {
+    font-family: "Graphik", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $tta-blue;
+    position: relative;
+    top: -3px;
+    padding: 0 0.1rem;
+  }
 
-    address {
-        margin: 0;
-        position: relative;
-        top: -1px;
-        left: 1px;
+  address {
+    margin: 0;
+    position: relative;
+    top: -1px;
+    left: 1px;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
 
 address {
-    margin: 0;
+  margin: 0;
 }
 
 @media #{$tablet-up} {
-    .artisan {
-        width: 90%;
-    }
+  .artisan {
+    width: 90%;
+  }
 
-    .picture-artisan {
-        width: 100%;
-        height: inherit;
-    }
+  .picture-artisan {
+    width: 100%;
+    height: inherit;
+  }
 
-    .profil {
-        width: 100%;
-    }
+  .profil {
+    width: 100%;
+  }
 }
 
 @media #{$laptop-up} {
-    .artisan {
-        width: 90%;
-    }
+  .artisan {
+    width: 90%;
+  }
 
-    .picture-artisan {
-        width: 100%;
-        height: inherit;
-    }
+  .picture-artisan {
+    width: 100%;
+    height: inherit;
+  }
 
-    .profil {
-        width: 100%;
-    }
+  .profil {
+    width: 100%;
+  }
 }

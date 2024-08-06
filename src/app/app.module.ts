@@ -22,6 +22,13 @@ import { Header3Component } from './components/header-3/header-3.component';
 import { Footer2Component } from './components/footer-2/footer-2.component';
 import { FormsModule } from '@angular/forms';
 import { ClickOutsideDirective } from './click-outside.directive';
+import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales/mentions-legales.component';
+import { DonneesPersonnellesComponent } from './components/mentions-legales/donnees-personnelles/donnees-personnelles.component';
+import { AccessibiliteComponent } from './components/mentions-legales/accessibilite/accessibilite.component';
+import { PresseComponent } from './components/mentions-legales/presse/presse.component';
+import { MarchesPublicsComponent } from './components/mentions-legales/marches-publics/marches-publics.component';
+import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
+import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +51,13 @@ import { ClickOutsideDirective } from './click-outside.directive';
     Header3Component,
     Footer2Component,
     ClickOutsideDirective,
+    MentionsLegalesComponent,
+    DonneesPersonnellesComponent,
+    AccessibiliteComponent,
+    PresseComponent,
+    MarchesPublicsComponent,
+    VenirALaRegionComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
