@@ -1,198 +1,193 @@
 @import "../../sass-lib/lib.scss";
 @import "../../sass-lib/responsive.scss";
 
-@media #{$mobile-max} {
-  .main-mobile {
-    display: block;
-    padding: 1.875rem 1.875rem 4rem 1.875rem;
+a {
+  &:hover {
+    text-decoration: underline !important;
   }
+}
 
-  .main-tablet-up {
-    display: none;
-  }
+.main-mobile {
+  display: block;
+  padding: 1.875rem 1.875rem 4rem 1.875rem;
+}
 
-  .blue-line {
-    width: 2rem;
-    height: 0.33rem;
-    background-color: $tta-light-blue;
-    margin: 0 0 1.5rem 0;
-  }
+.main-tablet-up {
+  display: none;
+}
 
-  h1 {
-    padding-bottom: 3rem;
-  }
+.blue-line {
+  width: 2rem;
+  height: 0.33rem;
+  background-color: $tta-light-blue;
+  margin: 0 0 1.5rem 0;
+}
 
-  .content {
-    display: grid;
-    gap: 4rem;
-  }
+h1 {
+  padding-bottom: 3rem;
+}
 
-  h2 {
-    padding-bottom: 1.5rem;
-  }
+.content {
+  display: grid;
+  gap: 4rem;
+}
 
-  p {
-    margin: 0;
-  }
+h2 {
+  padding-bottom: 1.5rem;
+}
 
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  margin-bottom: 0.875rem;
+  border: solid 1px $tta-light-blue;
+}
+
+.colon {
+  font-weight: 600;
+  color: $tta-blue;
+  position: relative;
+  padding: 0 0.1rem;
+}
+
+.artisan {
   img {
-    margin-bottom: 0.875rem;
-    border: solid 1px $tta-light-blue;
+    width: 208px;
+    height: 148.55px;
   }
 
-  h3 {
-    font-size: 1rem;
-  }
-
-  .artisan {
-    img {
-      width: 208px;
-      height: 148.55px;
-    }
-
-    .avis {
-      display: flex;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 0.1rem;
-      }
-
-      .stars {
-        border: none;
-        margin: 0;
-        height: 17px;
-        width: 93.36px;
-        position: relative;
-        top: 2px;
-      }
-    }
-
-    .specialite {
+  .profil {
+    div {
       display: flex;
       align-items: center;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -1px;
-        padding: 0 0.1rem;
-      }
-
-      p {
-        position: relative;
-        top: 1px;
-        left: 1px;
-      }
-    }
-
-    .localisation {
-      display: flex;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 0.1rem;
-      }
-
-      address {
-        position: relative;
-        top: -1px;
-        margin: 0;
-      }
     }
   }
 
-  .form-container {
+  .avis {
+    .colon {
+      top: -1px;
+    }
+
+    .stars {
+      border: none;
+      margin: 0;
+      height: 17px;
+      width: 93.36px;
+      position: relative;
+      top: 1px;
+      left: 2px;
+    }
+  }
+
+  .specialite {
+    .colon {
+      top: -1px;
+    }
+
     p {
-      padding-bottom: 24px;
-
-      span {
-        color: $tta-red;
-        font-family: "Graphik", sans-serif;
-        font-weight: 900;
-      }
+      height: 19.19px;
+      padding-bottom: 23px;
+      position: relative;
+      top: -1px;
+      left: 2px;
     }
   }
 
-  form {
+  .localisation {
     display: flex;
-    flex-direction: column;
-  }
 
-  label {
-    padding-bottom: 1rem;
-
-    span {
-      color: $tta-red;
-      font-weight: 900;
+    h3 {
+      align-self: flex-start;
     }
-  }
-
-  input {
-    margin-bottom: 1.5rem;
-    border: solid 1px $tta-light-blue;
-    background-color: $tta-white;
-    border-radius: 20px;
-    height: 40px;
-    padding: 0 1rem;
-  }
-
-  textarea {
-    border: solid 1px $tta-light-blue;
-    background-color: $tta-white;
-    border-radius: 20px;
-    height: 196px;
-    padding: 1rem 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .btn-submit {
-    border: none;
-    background-color: $tta-light-blue;
-    border-radius: 20px;
-    height: 40px;
-    width: 140px;
-    color: #fff;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: $tta-blue;
-    }
-  }
-
-  .lien {
-    display: flex;
-    align-items: center;
 
     .colon {
-      font-family: "Graphik", sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: $tta-blue;
-      position: relative;
-      top: 0px;
-      padding: 0 0.1rem;
+      top: -3px;
+      align-self: flex-start;
     }
 
-    div {
-      a {
-        text-decoration: none;
-        position: relative;
-        top: 1px;
-      }
+    address {
+      margin: 0;
+      position: relative;
+      top: -2px;
+      left: 1px;
+    }
+  }
+}
+
+.form-container {
+  p {
+    padding-bottom: 24px;
+  }
+}
+
+.invalid {
+  border: 2px solid $tta-red !important;
+}
+
+span {
+  color: $tta-red;
+  font-weight: 900;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  border: solid 1px $tta-light-blue;
+  background-color: $tta-white;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 1rem;
+}
+
+textarea {
+  border: solid 1px $tta-light-blue;
+  background-color: $tta-white;
+  border-radius: 20px;
+  height: 196px;
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-submit {
+  border: none;
+  background-color: $tta-light-blue;
+  border-radius: 20px;
+  height: 40px;
+  width: 140px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $tta-blue;
+  }
+}
+
+.lien {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    position: relative;
+    top: 1px;
+  }
+
+  div {
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -206,39 +201,6 @@
     padding: 1.875rem 1.875rem 4rem 1.875rem;
   }
 
-  .blue-line {
-    width: 2rem;
-    height: 0.33rem;
-    background-color: $tta-light-blue;
-    margin: 0 0 1.5rem 0;
-  }
-
-  h1 {
-    padding-bottom: 3rem;
-  }
-
-  .content {
-    display: grid;
-    gap: 4rem;
-  }
-
-  h2 {
-    padding-bottom: 1.5rem;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  img {
-    margin-bottom: 0.875rem;
-    border: solid 1px $tta-light-blue;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
   .artisan {
     display: flex;
     flex-wrap: wrap;
@@ -246,151 +208,7 @@
 
     img {
       width: 27.08%;
-    }
-
-    .avis {
-      display: flex;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 0.1rem;
-      }
-
-      .stars {
-        border: none;
-        margin: 0;
-        height: 17px;
-        width: 93.36px;
-        position: relative;
-        top: 2px;
-      }
-    }
-
-    .specialite {
-      display: flex;
-      align-items: center;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -1px;
-        padding: 0 0.1rem;
-      }
-
-      p {
-        position: relative;
-        top: 1px;
-        left: 1px;
-      }
-    }
-
-    .localisation {
-      display: flex;
-
-      .colon {
-        font-family: "Graphik", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: $tta-blue;
-        position: relative;
-        top: -3px;
-        padding: 0 0.1rem;
-      }
-
-      address {
-        position: relative;
-        top: -1px;
-        margin: 0;
-      }
-    }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-container {
-    p {
-      padding-bottom: 24px;
-
-      span {
-        color: $tta-red;
-        font-family: "Graphik", sans-serif;
-        font-weight: 900;
-      }
-    }
-  }
-
-  label {
-    padding-bottom: 1rem;
-
-    span {
-      color: $tta-red;
-      font-weight: 900;
-    }
-  }
-
-  input {
-    margin-bottom: 1.5rem;
-    border: solid 1px $tta-light-blue;
-    background-color: $tta-white;
-    border-radius: 20px;
-    height: 40px;
-    padding: 0 1rem;
-  }
-
-  textarea {
-    border: solid 1px $tta-light-blue;
-    background-color: $tta-white;
-    border-radius: 20px;
-    height: 196px;
-    padding: 1rem 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .btn-submit {
-    border: none;
-    background-color: $tta-light-blue;
-    border-radius: 20px;
-    height: 40px;
-    width: 140px;
-    color: #fff;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: $tta-blue;
-    }
-  }
-
-  .lien {
-    display: flex;
-    align-items: center;
-
-    .colon {
-      font-family: "Graphik", sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: $tta-blue;
-      position: relative;
-      top: 0px;
-      padding: 0 0.1rem;
-    }
-
-    div {
-      a {
-        text-decoration: none;
-        position: relative;
-        top: 1px;
-      }
+      height: inherit;
     }
   }
 }
@@ -400,14 +218,4 @@
     width: 1160px;
     margin: 0 auto;
   }
-}
-
-a {
-  &:hover {
-    text-decoration: underline !important;
-  }
-}
-
-.invalid {
-  border: 2px solid $tta-red !important;
 }

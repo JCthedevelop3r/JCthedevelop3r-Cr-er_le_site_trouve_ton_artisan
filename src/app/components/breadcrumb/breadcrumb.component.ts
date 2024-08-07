@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.scss'
 })
-export class BreadcrumbComponent {
-
-}
+export class BreadcrumbComponent {}

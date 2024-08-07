@@ -25,18 +25,19 @@ h4 {
   div {
     display: flex;
     align-items: center;
+
+    .colon {
+      font-weight: 600;
+      color: $tta-blue;
+      position: relative;
+      padding: 0 0.1rem;
+    }
   }
 }
 
 .avis {
   .colon {
-    font-family: "Graphik", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: $tta-blue;
-    position: relative;
     top: -1px;
-    padding: 0 0.1rem;
   }
 
   .stars {
@@ -52,13 +53,7 @@ h4 {
 
 .specialite {
   .colon {
-    font-family: "Graphik", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: $tta-blue;
-    position: relative;
-    top: -2px;
-    padding: 0 0.1rem;
+    top: -1px;
   }
 
   p {
@@ -78,13 +73,7 @@ h4 {
   }
 
   .colon {
-    font-family: "Graphik", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: $tta-blue;
-    position: relative;
     top: -3px;
-    padding: 0 0.1rem;
     align-self: flex-start;
   }
 
