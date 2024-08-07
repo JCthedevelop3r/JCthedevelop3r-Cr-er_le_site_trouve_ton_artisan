@@ -70,6 +70,11 @@
   font-style: normal;
 }
 
+* {
+  font-family: "Graphik", sans-serif;
+  font-weight: 100;
+}
+
 h1,
 h2,
 h3,
@@ -89,6 +94,7 @@ h4 {
 p,
 li,
 a {
+  font-family: "Graphik", sans-serif;
   color: $tta-dark-blue !important;
   text-decoration: none;
 }

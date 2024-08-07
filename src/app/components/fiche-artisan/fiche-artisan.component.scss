@@ -115,6 +115,18 @@
     }
   }
 
+  .form-container {
+    p {
+      padding-bottom: 24px;
+
+      span {
+        color: $tta-red;
+        font-family: "Graphik", sans-serif;
+        font-weight: 900;
+      }
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -125,6 +137,7 @@
 
     span {
       color: $tta-red;
+      font-weight: 900;
     }
   }
 
@@ -305,11 +318,24 @@
     flex-direction: column;
   }
 
+  .form-container {
+    p {
+      padding-bottom: 24px;
+
+      span {
+        color: $tta-red;
+        font-family: "Graphik", sans-serif;
+        font-weight: 900;
+      }
+    }
+  }
+
   label {
     padding-bottom: 1rem;
 
     span {
       color: $tta-red;
+      font-weight: 900;
     }
   }
 
@@ -380,4 +406,8 @@ a {
   &:hover {
     text-decoration: underline !important;
   }
+}
+
+.invalid {
+  border: 2px solid $tta-red !important;
 }

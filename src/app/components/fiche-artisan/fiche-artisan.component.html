@@ -2,6 +2,11 @@
 
 <main *ngIf="artisan" class="main-mobile">
   <app-breadcrumb />
+  <app-message-sent
+    *ngIf="messageSent"
+    [artisanName]="artisan.identity"
+    (closeMessage)="onCloseMessageSent()"
+  />
   <div class="blue-line"></div>
   <h1>Fiche artisan</h1>
   <div class="content">
@@ -49,14 +54,32 @@
     </section>
     <div class="form-container">
       <h2>Formulaire de contact</h2>
-      <form action="">
-        <label for="">Nom<span>*</span> :</label>
-        <input type="text" />
-        <label for="">Objet<span>*</span> :</label>
-        <input type="text" />
-        <label for="">Message<span>*</span> :</label>
-        <textarea name="" id=""></textarea>
-        <input type="submit" value="Soumettre" class="btn-submit p-0 m-0" />
+      <p>Les champs marqués d'un "<span>*</span>" sont obligatoires.</p>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="name">Nom<span>*</span> :</label>
+        <input
+          id="name"
+          formControlName="name"
+          type="text"
+          [ngClass]="{ invalid: isInvalid('name') }"
+        />
+
+        <label for="subject">Objet<span>*</span> :</label>
+        <input
+          id="subject"
+          formControlName="subject"
+          type="text"
+          [ngClass]="{ invalid: isInvalid('subject') }"
+        />
+
+        <label for="message">Message<span>*</span> :</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          [ngClass]="{ invalid: isInvalid('message') }"
+        ></textarea>
+
+        <button type="submit" class="btn-submit p-0 m-0">Soumettre</button>
       </form>
     </div>
     <div class="website">
@@ -76,6 +99,11 @@
 
 <main *ngIf="artisan" class="main-tablet-up">
   <app-breadcrumb />
+  <app-message-sent
+    *ngIf="messageSent"
+    [artisanName]="artisan.identity"
+    (closeMessage)="onCloseMessageSent()"
+  />
   <div class="blue-line"></div>
   <h1>Fiche artisan</h1>
   <div class="content">
@@ -119,14 +147,32 @@
     </section>
     <div class="form-container">
       <h2>Formulaire de contact</h2>
-      <form action="">
-        <label for="">Nom<span>*</span> :</label>
-        <input type="text" />
-        <label for="">Objet<span>*</span> :</label>
-        <input type="text" />
-        <label for="">Message<span>*</span> :</label>
-        <textarea name="" id=""></textarea>
-        <input type="submit" value="Soumettre" class="btn-submit p-0 m-0" />
+      <p>Les champs marqués d'un "<span>*</span>" sont obligatoires.</p>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="name">Nom<span>*</span> :</label>
+        <input
+          id="name"
+          formControlName="name"
+          type="text"
+          [ngClass]="{ invalid: isInvalid('name') }"
+        />
+
+        <label for="subject">Objet<span>*</span> :</label>
+        <input
+          id="subject"
+          formControlName="subject"
+          type="text"
+          [ngClass]="{ invalid: isInvalid('subject') }"
+        />
+
+        <label for="message">Message<span>*</span> :</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          [ngClass]="{ invalid: isInvalid('message') }"
+        ></textarea>
+
+        <button type="submit" class="btn-submit p-0 m-0">Soumettre</button>
       </form>
     </div>
     <div class="website">

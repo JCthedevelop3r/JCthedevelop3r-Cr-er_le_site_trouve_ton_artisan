@@ -20,7 +20,7 @@ import { MenuLaptopComponent } from './components/header-2/menu-laptop/menu-lapt
 import { SearchInput2Component } from './components/header-2/search-input-2/search-input-2.component';
 import { Header3Component } from './components/header-3/header-3.component';
 import { Footer2Component } from './components/footer-2/footer-2.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClickOutsideDirective } from './click-outside.directive';
 import { MentionsLegalesComponent } from './components/mentions-legales/mentions-legales/mentions-legales.component';
 import { DonneesPersonnellesComponent } from './components/mentions-legales/donnees-personnelles/donnees-personnelles.component';
@@ -29,6 +29,7 @@ import { PresseComponent } from './components/mentions-legales/presse/presse.com
 import { MarchesPublicsComponent } from './components/mentions-legales/marches-publics/marches-publics.component';
 import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
 import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
+import { MessageSentComponent } from './components/fiche-artisan/message-sent/message-sent.component';
 
 @NgModule({
   declarations: [
@@ -58,11 +59,13 @@ import { ContactsComponent } from './components/mentions-legales/contacts/contac
     MarchesPublicsComponent,
     VenirALaRegionComponent,
     ContactsComponent,
+    MessageSentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ClickOutsideDirective],
   providers: [
