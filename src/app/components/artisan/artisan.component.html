@@ -3,7 +3,7 @@
 <li class="artisan">
   <ng-container *ngIf="isListPage; else defaultTemplate">
     <h2 class="identity">{{ identity }}</h2>
-    <a [routerLink]="['/fiche-artisan', artisanId]">
+    <a [routerLink]="['/fiche-artisan', artisanId]" (click)="goTopPage()">
       <img [src]="pictureArtisan" [alt]="altArtisan" class="picture-artisan" />
     </a>
     <div class="profil">
@@ -31,7 +31,7 @@
 
   <ng-template #defaultTemplate>
     <h3 class="identity identity-home-page">{{ identity }}</h3>
-    <a [routerLink]="['/fiche-artisan', artisanId]">
+    <a [routerLink]="['/fiche-artisan', artisanId]" (click)="goTopPage()">
       <img [src]="pictureArtisan" [alt]="altArtisan" class="picture-artisan" />
     </a>
     <div class="profil">

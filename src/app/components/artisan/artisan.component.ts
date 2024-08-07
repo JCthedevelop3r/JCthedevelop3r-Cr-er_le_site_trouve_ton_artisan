@@ -26,4 +26,8 @@ export class ArtisanComponent implements OnInit {
       this.isListPage = this.router.url.includes('/liste-artisan');
     });
   }
+
+  goTopPage() {
+    window.scrollTo(0, 0);
+  }
 }
