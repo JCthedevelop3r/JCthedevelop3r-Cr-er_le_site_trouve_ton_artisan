@@ -1,23 +1,13 @@
 @import "../../sass-lib/lib.scss";
 @import "../../sass-lib/responsive.scss";
 
+* {
+  color: #fff !important;
+}
+
 footer {
   background-color: $tta-light-blue;
-  color: #fff;
   margin-top: 1.875rem;
-}
-
-p {
-  margin: 0;
-  color: #fff !important;
-}
-
-address {
-  margin: 0;
-}
-
-li {
-  color: #fff !important;
 }
 
 .footer-container {
@@ -39,8 +29,6 @@ li {
     position: absolute;
     top: 2rem;
     left: 3rem;
-    width: 0;
-    height: 0;
     content: "";
     transform: rotate(90deg);
     border-right: 2rem solid rgba(0, 0, 0, 0);
@@ -70,10 +58,11 @@ li {
 
     h2 {
       font-size: 1rem;
-      color: #fff;
       padding-bottom: 1.5rem;
       width: 100%;
     }
+
+    @extend .address-a-hover-underline;
 
     .pointeur-localisation {
       display: flex;
@@ -83,17 +72,6 @@ li {
 
         img {
           width: 26px;
-        }
-      }
-
-      address {
-        a {
-          text-decoration: none;
-          color: #fff !important;
-
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
     }
@@ -110,16 +88,7 @@ li {
       }
     }
 
-    address {
-      a {
-        text-decoration: none;
-        color: #fff !important;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+    @extend .address-a-hover-underline;
   }
 }
 
@@ -149,7 +118,6 @@ li {
         padding: 0.65rem 0 0 0;
 
         a {
-          color: #fff !important;
           text-decoration: none;
           padding: 0.6rem;
 
@@ -172,7 +140,6 @@ li {
           .btn-cookies {
             border: none;
             background-color: $tta-light-blue;
-            color: #fff;
             text-decoration: underline;
             padding: 0 0 0 1.2rem;
           }

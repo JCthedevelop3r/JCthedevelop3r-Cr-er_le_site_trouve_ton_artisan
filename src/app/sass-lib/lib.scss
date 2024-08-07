@@ -32,6 +32,18 @@ $tta-transparent-green: rgba(130, 184, 100, 0.2);
   }
 }
 
+.address-a-hover-underline {
+  address {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .no-padding {
   padding: 0;
 }
