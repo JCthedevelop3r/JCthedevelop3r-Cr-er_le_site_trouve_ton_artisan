@@ -1,23 +1,13 @@
 @import "../../sass-lib/lib.scss";
 @import "../../sass-lib/responsive.scss";
 
+* {
+  color: #fff !important;
+}
+
 footer {
   background-color: $tta-light-blue;
-  color: #fff;
   margin-top: 1.875rem;
-}
-
-p {
-  margin: 0;
-  color: #fff !important;
-}
-
-address {
-  margin: 0;
-}
-
-li {
-  color: #fff !important;
 }
 
 .footer-container {
@@ -61,6 +51,7 @@ li {
 }
 
 .footer-main {
+  display: flex;
   border-bottom: solid 1px #fff;
   padding-bottom: 2rem;
   .localisation {
@@ -70,13 +61,13 @@ li {
 
     h2 {
       font-size: 1rem;
-      color: #fff;
       padding-bottom: 1.5rem;
       width: 100%;
     }
 
     .pointeur-localisation {
       display: flex;
+      @extend .address-a-hover-underline;
 
       .pointeur-container {
         padding-right: 1rem;
@@ -85,22 +76,13 @@ li {
           width: 26px;
         }
       }
-
-      address {
-        a {
-          text-decoration: none;
-          color: #fff !important;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
     }
   }
 
   .info-tel {
     display: flex;
+    padding-top: 43.19px !important;
+    @extend .address-a-hover-underline;
 
     .img-tel-container {
       padding-right: 1rem;
@@ -108,27 +90,6 @@ li {
       img {
         width: 26px;
       }
-    }
-
-    address {
-      a {
-        text-decoration: none;
-        color: #fff !important;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-@media #{$tablet-up} {
-  .footer-main {
-    display: flex;
-
-    .info-tel {
-      padding-top: 43.19px !important;
     }
   }
 }
@@ -149,7 +110,6 @@ li {
         padding: 0.65rem 0 0 0;
 
         a {
-          color: #fff !important;
           text-decoration: none;
           padding: 0.6rem;
 
@@ -172,7 +132,6 @@ li {
           .btn-cookies {
             border: none;
             background-color: $tta-light-blue;
-            color: #fff;
             text-decoration: underline;
             padding: 0 0 0 1.2rem;
           }
@@ -180,65 +139,117 @@ li {
       }
     }
   }
+}
 
-  .social-media-container {
-    width: 100vw;
-    background-color: #fff;
-    position: relative;
-    right: 1.875rem;
-    color: $tta-dark-blue;
-    padding: 1.25rem 0;
+.social-media-container {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  color: $tta-dark-blue;
+  padding: 1.25rem 0;
+
+  .logos-container {
+    display: flex;
+    justify-content: center;
 
     .logo-container {
+      width: 40px;
+      height: 30px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      position: relative;
+      outline: none;
 
-      div {
+      &::before {
+        content: "";
+        width: 30px;
         height: 30px;
-        margin-right: 10px;
-        display: flex;
-        align-items: center;
+        position: absolute;
+        border: dotted 1px #0074c7;
+        border-radius: 50px;
+        top: 0px;
+        left: 5px;
+        opacity: 0;
+      }
 
-        .youtube-img {
-          width: 28px;
-        }
+      &:focus::before {
+        opacity: 1;
+      }
 
-        img {
-          width: 20px;
-          height: 20px;
+      .icon {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: $tta-dark-blue;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $tta-light-blue;
         }
+      }
+
+      .facebook-img {
+        -webkit-mask: url("../../../../public/assets/images/logo-facebook.svg")
+          no-repeat center;
+        mask: url("../../../../public/assets/images/logo-facebook.svg")
+          no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .linkedin-img {
+        -webkit-mask: url("../../../../public/assets/images/logo-linkedin.svg")
+          no-repeat center;
+        mask: url("../../../../public/assets/images/logo-linkedin.svg")
+          no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .youtube-img {
+        width: 28px;
+        -webkit-mask: url("../../../../public/assets/images/logo-youtube.svg")
+          no-repeat center;
+        mask: url("../../../../public/assets/images/logo-youtube.svg") no-repeat
+          center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .instagram-img {
+        -webkit-mask: url("../../../../public/assets/images/logo-instagram.svg")
+          no-repeat center;
+        mask: url("../../../../public/assets/images/logo-instagram.svg")
+          no-repeat center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .x-img {
+        -webkit-mask: url("../../../../public/assets/images/logo-x.svg")
+          no-repeat center;
+        mask: url("../../../../public/assets/images/logo-x.svg") no-repeat
+          center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
       }
     }
   }
 }
 
-@media #{$desktop-max} {
+@media #{$laptop-up} {
   .footer-container {
     padding: 6.5rem 1.875rem 0 1.875rem;
 
     &::before {
-      position: absolute;
-      top: -1px;
-      right: 0;
       left: 26px;
-      height: 3.75rem;
       width: 95%;
-      content: "";
-      border-radius: 0 0 10rem 10rem;
-      background: #fff;
     }
 
     &::after {
-      position: absolute;
-      top: 2rem;
       left: 7rem;
-      width: 0;
-      height: 0;
-      content: "";
-      transform: rotate(90deg);
-      border-right: 2rem solid rgba(0, 0, 0, 0);
-      border-bottom: 2.5rem solid #fff;
-      border-left: 2rem solid rgba(0, 0, 0, 0);
     }
 
     .top-main-container {
@@ -273,106 +284,7 @@ li {
     .footer-bottom {
       nav {
         ul {
-          display: flex;
           justify-content: center;
-        }
-      }
-    }
-  }
-
-  .social-media-container {
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-    color: $tta-dark-blue;
-    padding: 1.25rem 0;
-
-    .logos-container {
-      display: flex;
-      justify-content: center;
-
-      .logo-container {
-        width: 40px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        outline: none;
-
-        &::before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          border: dotted 1px #0074c7;
-          border-radius: 50px;
-          top: 0px;
-          left: 5px;
-          opacity: 0;
-        }
-
-        &:focus::before {
-          opacity: 1;
-        }
-
-        .icon {
-          width: 20px;
-          height: 20px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-color: $tta-dark-blue;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            background-color: $tta-light-blue;
-          }
-        }
-
-        .facebook-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-facebook.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-facebook.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .linkedin-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-linkedin.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-linkedin.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .youtube-img {
-          width: 28px;
-          -webkit-mask: url("../../../../public/assets/images/logo-youtube.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-youtube.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .instagram-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-instagram.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-instagram.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .x-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-x.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-x.svg") no-repeat
-            center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
         }
       }
     }
@@ -382,166 +294,26 @@ li {
 @media #{$desktop-up} {
   .footer-container {
     width: 1160px;
-    padding: 6.5rem 1.875rem 0 1.875rem;
     margin: auto;
 
     &::before {
-      position: absolute;
-      top: -1px;
-      right: 0;
-      left: 0;
-      height: 3.75rem;
       width: 1160px;
-      content: "";
-      border-radius: 0 0 10rem 10rem;
-      background: #fff;
     }
 
     &::after {
-      position: absolute;
-      top: 2rem;
       left: 7rem;
-      width: 0;
-      height: 0;
-      content: "";
-      transform: rotate(90deg);
-      border-right: 2rem solid rgba(0, 0, 0, 0);
-      border-bottom: 2.5rem solid #fff;
-      border-left: 2rem solid rgba(0, 0, 0, 0);
     }
 
     .top-main-container {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: solid 1px #fff;
-      padding-bottom: 36px;
-
-      .footer-top {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin-left: 60px;
-      }
-
       .footer-main {
-        padding: 72px 0 0 0;
-        border: none;
         width: 66%;
 
         .localisation {
-          padding: 0;
           width: 50%;
         }
 
         .info-tel {
           width: 50%;
-        }
-      }
-    }
-
-    .footer-bottom {
-      nav {
-        ul {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    }
-  }
-
-  .social-media-container {
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-    color: $tta-dark-blue;
-    padding: 1.25rem 0;
-
-    .logos-container {
-      display: flex;
-      justify-content: center;
-
-      .logo-container {
-        width: 40px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        outline: none;
-
-        &::before {
-          content: "";
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          border: dotted 1px #0074c7;
-          border-radius: 50px;
-          top: 0px;
-          left: 5px;
-          opacity: 0;
-        }
-
-        &:focus::before {
-          opacity: 1;
-        }
-
-        .icon {
-          width: 20px;
-          height: 20px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-color: $tta-dark-blue;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            background-color: $tta-light-blue;
-          }
-        }
-
-        .facebook-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-facebook.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-facebook.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .linkedin-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-linkedin.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-linkedin.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .youtube-img {
-          width: 28px;
-          -webkit-mask: url("../../../../public/assets/images/logo-youtube.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-youtube.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .instagram-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-instagram.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-instagram.svg")
-            no-repeat center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
-        }
-
-        .x-img {
-          -webkit-mask: url("../../../../public/assets/images/logo-x.svg")
-            no-repeat center;
-          mask: url("../../../../public/assets/images/logo-x.svg") no-repeat
-            center;
-          -webkit-mask-size: contain;
-          mask-size: contain;
         }
       }
     }
