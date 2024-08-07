@@ -1,100 +1,98 @@
-@import '../../../sass-lib/lib.scss';
+@import "../../../sass-lib/lib.scss";
 
 .right-icons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @extend .full-h;
+
+  .magnifying-glass-container {
+    width: 52px;
+    height: 37px;
+
+    .magnifying-glass-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border: none;
+      background: none;
+      @extend .btn-effect;
+      @extend .full-wh;
+
+      &:active {
+        background-color: #fff !important;
+      }
+
+      .magnifying-glass {
+        width: 22px;
+      }
+    }
+  }
+
+  .navbar-toggler-container {
+    width: 51.97px;
     @extend .full-h;
-    
-    .magnifying-glass-container {
-        width: 52px;
-        height: 37px;
 
-        .magnifying-glass-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            border: none;
-            background: none;
-            @extend .btn-effect;
-            @extend .full-wh;
+    .navbar-toggler {
+      @extend .full-wh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @extend .btn-effect;
 
-            &:active {
-                background-color: #fff !important;
-            }
+      &:active {
+        background-color: #fff !important;
+      }
 
-            .magnifying-glass {
-                width: 22px;
-            }
+      .toggler-icon-container {
+        display: block;
+        position: relative;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+
+        .toggler-icon {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+          background-image: url("../../../../../public/assets/images/bouton-menu-burger.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;
         }
-    }
-    
-    .navbar-toggler-container {
-        width: 51.97px;
-        @extend .full-h;
 
-        .navbar-toggler {
-            @extend .full-wh;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            @extend .btn-effect;
-
-            &:active {
-                background-color: #fff !important;
-            }
-            
-            .toggler-icon-container {
-                display: block;
-                position: relative;
-                transition: opacity 0.3s ease;
-                opacity: 1;
-                
-                .toggler-icon {
-                    display: inline-block;
-                    width: 24px;
-                    height: 24px;
-                    vertical-align: middle;
-                    background-image: url('../../../../../public/assets/images/bouton-menu-burger.png');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: 100%;
-                  }
-
-                .action-text {
-                    font-size: .8rem;
-                    margin-top: .25rem;
-                }
-            }
-
-            .blue-cross-icon {
-                display: none;
-                width: 24px;
-                height: 24px;
-                vertical-align: middle;
-                background-image: url('../../../../../public/assets/images/croix-bleue.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100%;
-                transition: opacity 0.3s ease;
-                opacity: 0;
-                position: absolute;
-            }
-
-            // Classes pour les transitions
-            .fade-in {
-                display: inline-block;
-                opacity: 1 !important;
-            }
-
-            .fade-out {
-                opacity: 0 !important;
-            }
+        .action-text {
+          font-size: 0.8rem;
+          margin-top: 0.25rem;
         }
+      }
+
+      .blue-cross-icon {
+        display: none;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        background-image: url("../../../../../public/assets/images/croix-bleue.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        position: absolute;
+      }
+
+      // Classes pour les transitions
+      .fade-in {
+        display: inline-block;
+        opacity: 1 !important;
+      }
+
+      .fade-out {
+        opacity: 0 !important;
+      }
     }
+  }
 }
