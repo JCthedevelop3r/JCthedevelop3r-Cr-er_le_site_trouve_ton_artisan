@@ -313,13 +313,4 @@ export class DataArtisansService {
   getArtisans(): Artisan[] {
     return this.dataArtisans;
   }
-
-  getFilteredArtisans() {
-    return this.dataArtisans.map(artisan => ({
-      id: artisan.id,
-      identity: artisan.identity,
-      speciality: artisan.speciality,
-      location: artisan.location
-    }));
-  }
 }
