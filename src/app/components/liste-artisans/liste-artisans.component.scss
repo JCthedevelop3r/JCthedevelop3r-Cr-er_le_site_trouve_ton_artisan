@@ -21,6 +21,12 @@ h1 {
   display: grid;
 }
 
+@media #{$mobile-max} {
+  .liste-artisans {
+    gap: 3rem;
+  }
+}
+
 @media #{$tablet-up} {
   .liste-artisans {
     display: flex;
