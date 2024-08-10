@@ -25,7 +25,7 @@ export class DataStepsService {
       altImg: "curseur pointé vers le profil d'un artisan",
       stepSubtitle: "Choisissez un artisan",
       description: `Sélectionnez l'artisan de la liste qui vous a le plus séduit.
-        Référez-vous sur les informations de son profil pour faire votre choix
+        Référez vous sur les informations de son profil pour faire votre choix
         (avis, spécialité, localisation).`
     },
 
