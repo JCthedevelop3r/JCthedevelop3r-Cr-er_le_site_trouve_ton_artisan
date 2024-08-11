@@ -1,6 +1,6 @@
 <!-- Template qui s'affiche jusqu'à de 767px. -->
 
-<main *ngIf="artisan" class="main-mobile">
+<main *ngIf="artisan" class="fiche-artisan-mobile">
   <app-breadcrumb />
   <app-message-sent
     *ngIf="messageSent"
@@ -97,93 +97,93 @@
 
 <!-- Template qui s'affiche à partir de 768px. -->
 
-<main *ngIf="artisan" class="main-tablet-up">
-  <app-breadcrumb />
-  <app-message-sent
-    *ngIf="messageSent"
-    [artisanName]="artisan.identity"
-    (closeMessage)="onCloseMessageSent()"
-  />
-  <div class="blue-line"></div>
-  <h1>Fiche artisan</h1>
-  <div class="content">
-    <div class="artisan">
-      <img [src]="artisan.pictureArtisan" [alt]="artisan.altArtisan" />
-      <div class="profil">
-        <h2>{{ artisan.identity }}</h2>
-        <div class="avis">
-          <h3>Avis</h3>
-          <div class="colon">:</div>
-          <img
-            [src]="artisan.pictureStars"
-            [alt]="artisan.altStars"
-            class="stars"
+<!--<main *ngIf="artisan" class="fiche-artisan-tablet-up">
+    <app-breadcrumb />
+    <app-message-sent
+      *ngIf="messageSent"
+      [artisanName]="artisan.identity"
+      (closeMessage)="onCloseMessageSent()"
+    />
+    <div class="blue-line"></div>
+    <h1>Fiche artisan</h1>
+    <div class="content">
+      <div class="artisan">
+        <img [src]="artisan.pictureArtisan" [alt]="artisan.altArtisan" />
+        <div class="profil">
+          <h2>{{ artisan.identity }}</h2>
+          <div class="avis">
+            <h3>Avis</h3>
+            <div class="colon">:</div>
+            <img
+              [src]="artisan.pictureStars"
+              [alt]="artisan.altStars"
+              class="stars"
+            />
+          </div>
+          <div class="specialite">
+            <h3>Spécialité</h3>
+            <div class="colon">:</div>
+            <p>{{ artisan.speciality }}</p>
+          </div>
+          <div class="localisation">
+            <h3>Localisation</h3>
+            <div class="colon">:</div>
+            <address>
+              <a
+                [href]="artisan.maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ artisan.location }}</a
+              >
+            </address>
+          </div>
+        </div>
+      </div>
+      <section class="a-propos">
+        <h2>À propos</h2>
+        <p>
+          {{ artisan.about }}
+        </p>
+      </section>
+      <div class="form-container">
+        <h2>Formulaire de contact</h2>
+        <p>Les champs marqués d'un "<span>*</span>" sont obligatoires.</p>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <label for="name">Nom<span>*</span> :</label>
+          <input
+            id="name"
+            formControlName="name"
+            type="text"
+            [ngClass]="{ invalid: isInvalid('name') }"
           />
-        </div>
-        <div class="specialite">
-          <h3>Spécialité</h3>
+
+          <label for="subject">Objet<span>*</span> :</label>
+          <input
+            id="subject"
+            formControlName="subject"
+            type="text"
+            [ngClass]="{ invalid: isInvalid('subject') }"
+          />
+
+          <label for="message">Message<span>*</span> :</label>
+          <textarea
+            id="message"
+            formControlName="message"
+            [ngClass]="{ invalid: isInvalid('message') }"
+          ></textarea>
+
+          <button type="submit" class="btn-submit p-0 m-0">Soumettre</button>
+        </form>
+      </div>
+      <div class="website">
+        <h2>Site web</h2>
+        <div class="lien">
+          <h3>Lien</h3>
           <div class="colon">:</div>
-          <p>{{ artisan.speciality }}</p>
-        </div>
-        <div class="localisation">
-          <h3>Localisation</h3>
-          <div class="colon">:</div>
-          <address>
-            <a
-              [href]="artisan.maps"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ artisan.location }}</a
-            >
-          </address>
+          <div>
+            <a routerLink="">{{ artisan.website }}</a>
+          </div>
         </div>
       </div>
     </div>
-    <section class="a-propos">
-      <h2>À propos</h2>
-      <p>
-        {{ artisan.about }}
-      </p>
-    </section>
-    <div class="form-container">
-      <h2>Formulaire de contact</h2>
-      <p>Les champs marqués d'un "<span>*</span>" sont obligatoires.</p>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <label for="name">Nom<span>*</span> :</label>
-        <input
-          id="name"
-          formControlName="name"
-          type="text"
-          [ngClass]="{ invalid: isInvalid('name') }"
-        />
-
-        <label for="subject">Objet<span>*</span> :</label>
-        <input
-          id="subject"
-          formControlName="subject"
-          type="text"
-          [ngClass]="{ invalid: isInvalid('subject') }"
-        />
-
-        <label for="message">Message<span>*</span> :</label>
-        <textarea
-          id="message"
-          formControlName="message"
-          [ngClass]="{ invalid: isInvalid('message') }"
-        ></textarea>
-
-        <button type="submit" class="btn-submit p-0 m-0">Soumettre</button>
-      </form>
-    </div>
-    <div class="website">
-      <h2>Site web</h2>
-      <div class="lien">
-        <h3>Lien</h3>
-        <div class="colon">:</div>
-        <div>
-          <a routerLink="">{{ artisan.website }}</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+  </main>-->

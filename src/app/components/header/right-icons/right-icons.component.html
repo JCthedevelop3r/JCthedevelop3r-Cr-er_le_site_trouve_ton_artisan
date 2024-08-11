@@ -9,16 +9,7 @@
     </button>
   </div>
   <div class="navbar-toggler-container">
-    <button
-      (click)="navbarToggler()"
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <div (click)="navbarToggler()" class="navbar-toggler" tabindex="0">
       <div
         class="toggler-icon-container"
         [ngClass]="{ 'fade-out': isMenuOpen }"
@@ -30,6 +21,6 @@
         class="blue-cross-icon"
         [ngClass]="{ 'fade-in': isMenuOpen }"
       ></span>
-    </button>
+    </div>
   </div>
 </div>

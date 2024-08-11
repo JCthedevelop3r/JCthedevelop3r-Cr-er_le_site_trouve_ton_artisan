@@ -11,9 +11,12 @@ import { PresseComponent } from './components/mentions-legales/presse/presse.com
 import { MarchesPublicsComponent } from './components/mentions-legales/marches-publics/marches-publics.component';
 import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
 import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
+import { FicheArtisan2Component } from './components/fiche-artisan-2/fiche-artisan-2.component';
+import { responsiveRedirectGuard } from './responsive-redirect.guard';
 
 const routes: Routes = [
-  { path: 'fiche-artisan/:id', component: FicheArtisanComponent },
+  { path: 'fiche-artisan/:id', component: FicheArtisanComponent, canActivate: [responsiveRedirectGuard] },
+  { path: 'fiche-artisan-2/:id', component: FicheArtisan2Component},
   { path: 'liste-artisans/:speciality', component: ListeArtisansComponent },
   { path: 'mentions-legales', component: MentionsLegalesComponent },
   { path: 'donnees-personnelles', component: DonneesPersonnellesComponent },
