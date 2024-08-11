@@ -67,7 +67,6 @@ footer {
 
     .pointeur-localisation {
       display: flex;
-      @extend .address-a-hover-underline;
 
       .pointeur-container {
         padding-right: 1rem;
@@ -82,7 +81,6 @@ footer {
   .info-tel {
     display: flex;
     padding-top: 43.19px !important;
-    @extend .address-a-hover-underline;
 
     .img-tel-container {
       padding-right: 1rem;

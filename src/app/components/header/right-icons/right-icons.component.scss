@@ -4,7 +4,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  @extend .full-h;
 
   .magnifying-glass-container {
     width: 52px;
@@ -14,15 +13,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0;
       border: none;
       background: none;
-      @extend .btn-effect;
-      @extend .full-wh;
-
-      &:active {
-        background-color: #fff !important;
-      }
 
       .magnifying-glass {
         width: 22px;
@@ -32,20 +24,13 @@
 
   .navbar-toggler-container {
     width: 51.97px;
-    @extend .full-h;
 
     .navbar-toggler {
-      @extend .full-wh;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      @extend .btn-effect;
-
-      &:active {
-        background-color: #fff !important;
-      }
 
       .toggler-icon-container {
         display: block;
