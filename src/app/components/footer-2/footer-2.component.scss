@@ -191,47 +191,37 @@ footer {
       }
 
       .facebook-img {
-        -webkit-mask: url("../../../../public/assets/images/logo-facebook.svg")
-          no-repeat center;
-        mask: url("../../../../public/assets/images/logo-facebook.svg")
-          no-repeat center;
+        -webkit-mask: url("../../../../public/assets/images/logo-facebook.svg");
+        mask: url("../../../../public/assets/images/logo-facebook.svg");
         -webkit-mask-size: contain;
         mask-size: contain;
       }
 
       .linkedin-img {
-        -webkit-mask: url("../../../../public/assets/images/logo-linkedin.svg")
-          no-repeat center;
-        mask: url("../../../../public/assets/images/logo-linkedin.svg")
-          no-repeat center;
+        -webkit-mask: url("../../../../public/assets/images/logo-linkedin.svg");
+        mask: url("../../../../public/assets/images/logo-linkedin.svg");
         -webkit-mask-size: contain;
         mask-size: contain;
       }
 
       .youtube-img {
         width: 28px;
-        -webkit-mask: url("../../../../public/assets/images/logo-youtube.svg")
-          no-repeat center;
-        mask: url("../../../../public/assets/images/logo-youtube.svg") no-repeat
-          center;
+        -webkit-mask: url("../../../../public/assets/images/logo-youtube.svg");
+        mask: url("../../../../public/assets/images/logo-youtube.svg");
         -webkit-mask-size: contain;
         mask-size: contain;
       }
 
       .instagram-img {
-        -webkit-mask: url("../../../../public/assets/images/logo-instagram.svg")
-          no-repeat center;
-        mask: url("../../../../public/assets/images/logo-instagram.svg")
-          no-repeat center;
+        -webkit-mask: url("../../../../public/assets/images/logo-instagram.svg");
+        mask: url("../../../../public/assets/images/logo-instagram.svg");
         -webkit-mask-size: contain;
         mask-size: contain;
       }
 
       .x-img {
-        -webkit-mask: url("../../../../public/assets/images/logo-x.svg")
-          no-repeat center;
-        mask: url("../../../../public/assets/images/logo-x.svg") no-repeat
-          center;
+        -webkit-mask: url("../../../../public/assets/images/logo-x.svg");
+        mask: url("../../../../public/assets/images/logo-x.svg");
         -webkit-mask-size: contain;
         mask-size: contain;
       }

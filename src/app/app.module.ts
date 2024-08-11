@@ -30,6 +30,7 @@ import { MarchesPublicsComponent } from './components/mentions-legales/marches-p
 import { VenirALaRegionComponent } from './components/mentions-legales/venir-a-la-region/venir-a-la-region.component';
 import { ContactsComponent } from './components/mentions-legales/contacts/contacts.component';
 import { MessageSentComponent } from './components/fiche-artisan/message-sent/message-sent.component';
+import { FicheArtisan2Component } from './components/fiche-artisan-2/fiche-artisan-2.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { MessageSentComponent } from './components/fiche-artisan/message-sent/me
     VenirALaRegionComponent,
     ContactsComponent,
     MessageSentComponent,
+    FicheArtisan2Component,
   ],
   imports: [
     BrowserModule,

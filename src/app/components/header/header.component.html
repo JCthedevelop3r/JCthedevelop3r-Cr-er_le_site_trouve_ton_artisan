@@ -20,11 +20,7 @@
           ></app-right-icons>
         </div>
       </div>
-      <div
-        class="collapse navbar-collapse"
-        [ngClass]="{ show: isMenuOpen }"
-        id="navbarSupportedContent"
-      >
+      <div class="collapse navbar-collapse" [ngClass]="{ show: isMenuOpen }">
         <app-menu-burger (closeMenu)="closeMenu()"></app-menu-burger>
       </div>
     </div>
