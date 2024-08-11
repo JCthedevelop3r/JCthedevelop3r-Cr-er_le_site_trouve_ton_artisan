@@ -1,6 +1,9 @@
-<div class="right-icons">
+<div class="right-icons full-h">
   <div class="magnifying-glass-container">
-    <button (click)="searchToggler()" class="magnifying-glass-button">
+    <button
+      (click)="searchToggler()"
+      class="magnifying-glass-button full-wh btn-effect bg-white-active p-0"
+    >
       <img
         src="assets/images/loupe-bleue.png"
         alt="loupe bleue"
@@ -8,8 +11,12 @@
       />
     </button>
   </div>
-  <div class="navbar-toggler-container">
-    <div (click)="navbarToggler()" class="navbar-toggler" tabindex="0">
+  <div class="navbar-toggler-container full-h">
+    <div
+      (click)="navbarToggler()"
+      class="navbar-toggler full-wh btn-effect bg-white-active"
+      tabindex="0"
+    >
       <div
         class="toggler-icon-container"
         [ngClass]="{ 'fade-out': isMenuOpen }"

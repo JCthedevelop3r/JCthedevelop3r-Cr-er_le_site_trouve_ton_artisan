@@ -32,6 +32,12 @@ $tta-transparent-green: rgba(130, 184, 100, 0.2);
   }
 }
 
+.bg-white-active {
+  &:active {
+    background-color: #fff !important;
+  }
+}
+
 .address-a-hover-underline {
   address {
     a {
@@ -42,8 +48,4 @@ $tta-transparent-green: rgba(130, 184, 100, 0.2);
       }
     }
   }
-}
-
-.no-padding {
-  padding: 0;
 }

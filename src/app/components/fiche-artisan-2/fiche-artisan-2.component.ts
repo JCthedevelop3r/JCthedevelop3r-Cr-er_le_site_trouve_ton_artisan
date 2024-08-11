@@ -27,7 +27,7 @@ export class FicheArtisan2Component implements OnInit {
   }
 
   ngOnInit(): void {
-    // Écouter les changements de paramètres
+    // Écoute les changements de paramètres
     this.route.paramMap.subscribe(params => {
       const artisanId: string | null = params.get('id');
       if (artisanId) {
