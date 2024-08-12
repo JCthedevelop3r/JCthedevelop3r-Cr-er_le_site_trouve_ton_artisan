@@ -27,7 +27,6 @@ export class SearchInputComponent implements OnInit {
 
     // Souscrire aux changements de visibilité
     this.visibilityService.visibility$.subscribe(isVisible => {
-      console.log('Visibility changed:', isVisible);
       this.isVisible = isVisible;
     });
   }
@@ -45,14 +44,13 @@ export class SearchInputComponent implements OnInit {
   }
 
   goToFicheArtisan(id: number): void {
-    this.searchQuery = ''; // Réinitialiser la recherche
-    this.filteredArtisans = []; // Réinitialiser la liste filtrée
-    this.visibilityService.hideSearch(); // Masquer le composant
+    this.searchQuery = ''; // Réinitialise la recherche
+    this.filteredArtisans = []; // Réinitialise la liste filtrée
+    this.visibilityService.hideSearch(); // Masque le composant
     this.router.navigate(['/fiche-artisan', id]);
   }
 
   onClickOutside(): void {
-    console.log('Click outside detected, hiding search input');
     this.visibilityService.hideSearch();
   }
 }
