@@ -17,7 +17,6 @@ export class ListeArtisansComponent implements OnInit{
 
   ngOnInit() {
     this.artisans = this.dataArtisansService.dataArtisans;
-    console.log(this.artisans);
 
     this.route.paramMap.subscribe(params => {
       this.speciality = params.get('speciality');
